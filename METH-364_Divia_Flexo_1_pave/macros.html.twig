@@ -20,8 +20,8 @@
     {% if season %}
         <div class="title">{{'season.block.title'|trans({}, 'default')}}</div>
 
-        {% set startDate = season.startDate.timestamp|localizeddate('long', 'none', 'en') %}
-        {% set endDate = season.endDate.timestamp|localizeddate('long', 'none', 'en') %}
+        {% set startDate = season.startDate.timestamp|localizeddate('long', 'none') %}
+        {% set endDate = season.endDate.timestamp|localizeddate('long', 'none') %}
         <div class="content">
             {{'season.block.content'|trans({'%startDate%':startDate, '%endDate%':endDate}, 'default')}}
         </div>
