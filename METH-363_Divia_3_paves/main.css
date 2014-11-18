@@ -1,0 +1,280 @@
+/* layout type Dijon (layout_1) */
+#layout-1-wrapper{
+    padding:8px;
+}
+#layout-main-wrapper #header{
+    background-color:#1a171b;
+    color:white;
+    -webkit-print-color-adjust: exact;
+    height: 55px;
+}
+#layout-main-wrapper #header #direction-title-wrapper,
+#layout-1-wrapper #line_map_block,
+#layout-1-wrapper #flash_info_block,
+#layout-1-wrapper #small-right-blocks,
+#layout-main-wrapper #header #stop-point-title-wrapper{
+    float:left;
+    padding-left:15px;
+}
+#layout-1-wrapper #small-right-blocks{
+    padding-left:14px;
+}
+#layout-1-wrapper #line_map_block{
+    width:100%;
+}
+#layout-1-wrapper #small-right-blocks{
+    width:255px;
+}
+#layout-main-wrapper #header #direction-title-wrapper{
+    font-size:30px;
+    line-height:55px;
+    height:55px;
+}
+#layout-main-wrapper #header #stop-point-title-wrapper{
+    padding-top:5px;
+    padding-right:10px;
+    font-size:14px;
+    float: right;
+}
+#header_route_sign{
+    float:left;
+    height:inherit;
+}
+
+
+#large-left-blocks {
+    float:left;
+    width:825px;
+}
+#layout-1-wrapper #flash_info_top{
+    height: 225px;
+    border-bottom: 1px solid black;
+    margin-left: 36px;
+    width: 95%;
+}
+
+#layout-1-wrapper #flash_info_block{
+    width:94%;
+}
+
+#layout-1-wrapper #flash_info_block{
+    height: 25px;
+    margin-left: 45px;
+    border-bottom: 1px solid black;
+}
+#layout-1-wrapper #flash_info_block .content{
+    font-weight: bold;
+}
+/* to align image vertically */
+#layout-1-wrapper #flash_info_block:before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+img.flash-info{
+    position: absolute;
+    left: 9px;
+    top: 290px;
+}
+
+img.divia-logo{
+    width: 100px;
+    position: absolute;
+    right: 8px;
+    bottom: 30px;
+}
+.editable #header_route_sign{
+    min-width: 100px;
+    background-color: white;
+    border-color: black;
+}
+.header_route_sign_img{
+    height:100%;
+}
+.line_map_img{
+    max-height:95%;
+    max-width:95%;
+    vertical-align:middle;
+}
+#map-wrapper{
+    margin-top:15px;
+}
+#layout-1-wrapper #small-right-blocks{
+    border-left: 1px solid black;
+}
+/* .editable #layout-1-wrapper #small-right-blocks{
+    border: 1px solid black;
+} */
+#layout-1-wrapper #line_map_block{
+    height:225px;
+}
+#layout-1-wrapper #small-right-blocks{
+    height:250px;
+}
+#layout-1-wrapper #line_map_block{
+    text-align:center;
+}
+/* to align image vertically */
+#layout-1-wrapper #line_map_block:before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+#layout-1-wrapper.layout-2-overload .information-text-blocks,
+#timetables-wrapper{
+    margin-top:0px;
+    width:100%;
+}
+#timetables-wrapper .timegrid-container{
+    float:left;
+    font-size:12px;
+    margin-top:5px;
+    line-height:15px;
+    padding:2px;
+    position: relative;
+    width:49%;
+}
+div#timegrid_block_2 {
+    margin-left:20px;
+    margin-bottom:25px;
+}
+div#timegrid_block_4 {
+    margin-left:20px;
+}
+.information-text-blocks .text-block-wrapper .title,
+#timetables-wrapper .timegrid-header{
+    background-color:#1a171b;
+    color:white;
+    font-weight:bold;
+    font-size:14px;
+    line-height:25px;
+    padding:0px 5px;
+    height:25px;
+    width:100%;
+}
+#timetables-wrapper .timegrid-body{
+    background-color: white;
+    height: 183px;
+    width:100%;
+}
+#layout-1-wrapper .timegrid-body .hour-label{
+    font-weight:bold;
+    font-size: 11px;
+    line-height:15px;
+}
+#layout-1-wrapper .timegrid-column{
+    line-height: 15px;
+    font-size: 12px;
+    width:4.5454%;
+}
+#layout-1-wrapper .timegrid-column sup{
+    font-size: 80%;
+}
+#small-right-blocks{
+    font-size: 10pt;
+}
+#small-right-blocks .small-block .title{
+    font-weight:bold;
+    margin-bottom:2px;
+}
+#layout-1-wrapper .small-block{
+    border:1px solid white;
+    border-bottom-color:black;
+    margin:5px 0;
+    height:45px;
+}
+#layout-1-wrapper .small-block:first-child{
+    margin-top: 0;
+}
+#layout-1-wrapper #text_block_2.small-block{
+    height: 63px;
+}
+#layout-1-wrapper #text_block_1.small-block{
+    height: 85px;
+    margin: 10px 0;
+}
+#layout-1-wrapper #text_block_4.small-block .title,
+#layout-1-wrapper #text_block_4.small-block{
+    font-size:11px;
+}
+#layout-1-wrapper .small-block:last-child{
+    border-bottom:none;
+    margin-bottom:0;
+}
+.editable #layout-1-wrapper .block.small-block:last-child:hover,
+.editable #layout-1-wrapper .block.small-block:hover{
+    border: 1px dashed black;
+}
+.timegrid-body{
+    position:relative;
+}
+#timetables-wrapper .timegrid-body .timetable-notes{
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.timegrid-body tr{
+    height: 15px;
+}
+
+.timegrid-body .empty-timegrid tr.odd,
+
+#timegrid_block_1.timegrid-container .timegrid-header{
+    background-color: #D22881;
+}
+#timegrid_block_1.timegrid-container .timegrid-body tr.even{
+    background-color: #FFE7F0;
+}
+
+#timegrid_block_2.timegrid-container .timegrid-header{
+    background-color: #A4C749;
+}
+#timegrid_block_2.timegrid-container .timegrid-body tr.even{
+    background-color: #F4F6D6;
+}
+
+#timegrid_block_3.timegrid-container .timegrid-header{
+    background-color: #F18632;
+}
+#timegrid_block_3.timegrid-container .timegrid-body tr.even{
+    background-color: #FFE5D0;
+}
+
+#timegrid_block_4.timegrid-container .timegrid-header{
+    background-color: #737474;
+}
+#timegrid_block_4.timegrid-container .timegrid-body tr.even{
+    background-color: #E9E8E7;
+}
+#layout-1-wrapper .information-text-blocks{
+    float:right;
+    width:49%;
+}
+.information-text-blocks .text-block-wrapper{
+    margin-top:0px;
+    min-height:85px;
+    min-width:100%;
+    padding:2px;
+}
+.information-text-blocks .text-block-wrapper .relative{
+    margin-top: 14px;
+    width: 100%;
+    height: 85px;
+    background-color: #E7E7F3;
+}
+#layout-1-wrapper .text-block-wrapper .content{
+    background-color: #E7E7F3;
+    display:table;
+    font-size:12px;
+    font-weight:bold;
+    height: 115px;
+    position:absolute;
+    width: 100%;
+}
+#layout-1-wrapper .text-block-wrapper .content p{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
