@@ -13,16 +13,21 @@
             {% set id = 'timegrid_block_1' %}
             {% set block = attribute(timetable.blocks, id) %}
             {% set nbLines = 4 %}
-            {% include templatePath ~ "timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : nbLines} %}
+            {% include templatePath ~ "timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : nbLines, additionnalClass: 'purple'} %}
             {% set calendar = attribute(calendars, block.content) %}
-            {% if calendar %}
             <div class="pad30t">
+            {% if calendar %}
             {%
                 include templatePath ~ "notes.html.twig"
                 with { 'notes' : calendar.notes, 'computedNotes' : notes, 'calendar' : calendar } only
             %}
             {% endif %}
             </div>
+            <div class="information-text-blocks">
+                <div id="" class="centered-text-block text-block-wrapper">
+                    <div class="content">En période "Anis", les horaires de cette ligne ne changent pas.</div>
+                </div>
+            </div> 
         </div>
     </div>
 {% endblock %}
