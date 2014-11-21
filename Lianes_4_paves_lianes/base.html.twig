@@ -4,7 +4,8 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    {% stylesheets 'bundles/canaltpmtt/css/main.css' output="" %}
+    {% stylesheets 'bundles/canaltpmtt/css/main.css'
+                    'bundles/canaltpmtt/css/layouts.css' %}
         <link rel="stylesheet" media="all" href="{{ asset_url }}?{{ assets_version }}" />
     {% endstylesheets %}
 
@@ -46,8 +47,9 @@
             </div>
             {% block timetable_downer_content %}{% endblock %}
         </div>
-	<img class="divia-logo" src="{{ asset(imgPath ~ 'logo.png') }}">
+        <img class="divia-logo" src="{{ asset(imgPath ~ 'logo.png') }}">
     </div>
+
 {% endblock %}
 
 {% block scripts %}
