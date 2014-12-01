@@ -87,7 +87,7 @@ img.divia-logo{
     width: 100px;
     position: absolute;
     right: 8px;
-    bottom: 30px;
+    bottom: 25px;
 }
 .editable #header_route_sign{
     min-width: 100px;
@@ -135,11 +135,11 @@ img.divia-logo{
 #timetables-wrapper .timegrid-container{
     float:left;
     font-size:12px;
-    margin-top:5px;
     line-height:15px;
     padding:2px;
     position: relative;
     width:49%;
+    height: 197px;
 }
 div#timegrid_block_2 {
     margin-left:20px;
