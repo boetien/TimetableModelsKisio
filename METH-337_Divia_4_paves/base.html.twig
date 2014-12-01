@@ -28,12 +28,7 @@
                     {% endif %}
                 </div>
                 <div id="stop-point-title-wrapper" data-block-level="stop_point" data-auto-filled="1">
-                    <div class="bold">{{'stop_point.label'|trans({}, 'default')}}:</div>
-                    {% if stopPoint.title is defined %}
-                        {{ stopPoint.title }}
-                    {% else %}
-                        {{'stop_point.block.stop.default'|trans({}, 'default')}}
-                    {% endif %}
+                    <div class="bold">{{'stop_point.label'|trans({}, 'default')}}:</div> {{ stopPoint.title }}
                 </div>
             </div>
             <div id="map-wrapper" class="clearfix">
