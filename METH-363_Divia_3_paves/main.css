@@ -86,9 +86,8 @@ img.flash-info{
 
 img.divia-logo{
     width: 100px;
-    position: absolute;
-    right: 8px;
-    bottom: 30px;
+    float: right;
+    margin-top: 35px;
 }
 .editable #header_route_sign{
     min-width: 100px;
@@ -160,11 +159,7 @@ div#timegrid_block_4 {
     height:25px;
     width:100%;
 }
-#timetables-wrapper .timegrid-body{
-    background-color: white;
-    height: 195px;
-    width:100%;
-}
+
 #layout-1-wrapper .timegrid-body .hour-label{
     font-weight:bold;
     font-size: 11px;
@@ -221,8 +216,6 @@ div#timegrid_block_4 {
     height: 15px;
 }
 
-.timegrid-body .empty-timegrid tr.odd,
-
 #timegrid_block_1.timegrid-container .timegrid-header{
     background-color: #D2007A;
 }
@@ -271,7 +264,7 @@ div#timegrid_block_4 {
     display:table;
     font-size:12px;
     font-weight:bold;
-    height: 115px;
+    height: 100px;
     position:absolute;
     width: 100%;
 }
