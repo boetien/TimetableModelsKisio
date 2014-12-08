@@ -9,6 +9,7 @@
 }
 #layout-main-wrapper #header #direction-title-wrapper,
 #layout-1-wrapper #line_map_block,
+#layout-1-wrapper #flash_info_block,
 #layout-1-wrapper #small-right-blocks,
 #layout-main-wrapper #header #stop-point-title-wrapper{
     float:left;
@@ -63,7 +64,9 @@ img.divia-logo{
 #layout-1-wrapper #small-right-blocks{
     border-left: 1px solid black;
 }
-#layout-1-wrapper #line_map_block,
+#layout-1-wrapper #line_map_block{
+    height:225px;
+}
 #layout-1-wrapper #small-right-blocks{
     height:250px;
 }
@@ -94,7 +97,7 @@ height: auto;
 }
 .information-text-blocks .text-block-wrapper .title,
 #timetables-wrapper .timegrid-header{
-    background-color: #df00fc;
+    background-color: #d2007a;
     color:white;
     font-weight:bold;
     font-size:14px;
@@ -144,10 +147,7 @@ height: auto;
     height: 85px;
     margin: 10px 0;
 }
-#layout-1-wrapper #text_block_4.small-block .title,
-#layout-1-wrapper #text_block_4.small-block{
-    font-size:11px;
-}
+
 #layout-1-wrapper .small-block:last-child{
     border-bottom:none;
     margin-bottom:0;
@@ -175,7 +175,7 @@ height: auto;
 }
 
 .information-text-blocks .text-block-wrapper{
-    background-color: #9afc19;
+    background-color: #b1ca34;
     color:white;
     font-weight: bold;
     font-size: 10pt;
@@ -190,10 +190,10 @@ height: auto;
 .proxi-layout #proxi-explanation-wrapper{
     float:left;
     width:49%;
+    padding-top: 10px;
 }
 .proxi-layout #timetables-wrapper{
     float:right;
-    margin-top:22px;
     width:49%;
 }
 .proxi-layout #timetables-wrapper .timegrid-container {
@@ -227,9 +227,6 @@ height: auto;
 .proxi-layout .explanation-block .content div{
     margin-bottom:10px;
 }
-.proxi-layout .explanation-block .content div:last-child{
-    margin-bottom:30px;
-}
 .explanation-block .title.secondary{
     display:block;
     font-weight:normal;
@@ -244,4 +241,48 @@ height: auto;
 .proxi-layout .explanation-block .content.secondary{
     font-weight:bold;
     padding-bottom:50px;
+}
+
+#large-left-blocks {
+    float:left;
+    width:825px;
+}
+
+#layout-1-wrapper #flash_info_block{
+    width:94%;
+}
+
+#layout-1-wrapper #flash_info_block{
+    height: 25px;
+    margin-left: 45px;
+    border-bottom: 1px solid black;
+}
+#layout-1-wrapper #flash_info_block .content{
+    font-weight: bold;
+}
+/* to align image vertically */
+#layout-1-wrapper #flash_info_block:before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#layout-1-wrapper #flash_info_top{
+    border-bottom: 1px solid black;
+    margin-left: 36px;
+    width: 95%;
+    float: left;
+    padding-left: 0px;
+}
+
+img.flash-info {
+    left: 9px;
+    position: absolute;
+    top: 290px;
+}
+
+#layout-1-wrapper #flash_info_block .content {
+    font-size: 10px;
+    font-weight: bold;
 }

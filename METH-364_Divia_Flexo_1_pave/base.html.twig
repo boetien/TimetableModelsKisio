@@ -7,9 +7,9 @@
     {% stylesheets 'bundles/canaltpmtt/css/main.css' output="" %}
         <link rel="stylesheet" media="all" href="{{ asset_url }}?{{ assets_version }}" />
     {% endstylesheets %}
-
+    
     <link rel="stylesheet" media="all" href="{{ asset(cssPath ~ 'main.css') }}?{{ assets_version }}" />
-
+    
     {% stylesheets  'bundles/canaltpmtt/css/print.css'
                    filter='cssrewrite' output='css/full_layouts_print.css' %}
         <link rel="stylesheet" media="print" href="{{ asset_url }}?{{ assets_version }}" />
@@ -36,7 +36,14 @@
                 </div>
             </div>
             <div id="map-wrapper" class="clearfix">
-                {{ macros.img('line_map_block', attribute(timetable.blocks, 'line_map_block'), 'line_map_img', 'route') }}
+                <div id="large-left-blocks">
+                    {{ macros.img('line_map_block', attribute(timetable.blocks, 'line_map_block'), 'line_map_img', 'route') }}
+                    <div id="flash_info_top"></div>
+                    <img class="flash-info" src="{{ asset(imgPath ~ 'flash_info.png') }}">
+                    <div id="flash_info_block" class="">
+                        <span class="content">Repérez la période "Anis" ou "Cassis" à consulter, grâce à la couleur du jour de votre voyage indiquée sur le "Calendrier Voyageurs"</span>
+                    </div>
+                </div>
                 <div id="small-right-blocks">
                     {{ macros.season_validity('text_block_1', currentSeason, 'small-block') }}
                     {{ macros.text('text_block_2', attribute(timetable.blocks, 'text_block_2'), 'route', 'small-block block') }}
