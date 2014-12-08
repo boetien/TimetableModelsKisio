@@ -46,6 +46,11 @@
     float:left;
     width:825px;
 }
+
+#layout-1-wrapper #flash_info_block {
+    margin-top: 3px;
+}
+
 #layout-1-wrapper #flash_info_top{
     height: 225px;
     border-bottom: 1px solid black;
@@ -53,18 +58,19 @@
     width: 95%;
 }
 
-#layout-1-wrapper #flash_info_block{
+#layout-1-wrapper #flash_info_bottom{
     width:94%;
-}
-
-#layout-1-wrapper #flash_info_block{
     height: 25px;
-    margin-left: 45px;
+    margin-left: 44px;
     border-bottom: 1px solid black;
 }
+
 #layout-1-wrapper #flash_info_block .content{
     font-weight: bold;
+    font-size: 12px;
+    padding-left: 30px;
 }
+
 /* to align image vertically */
 #layout-1-wrapper #flash_info_block:before{
     content: "";
@@ -195,10 +201,6 @@ div#timegrid_block_4 {
     height: 85px;
     margin: 10px 0;
 }
-#layout-1-wrapper #text_block_4.small-block .title,
-#layout-1-wrapper #text_block_4.small-block{
-    font-size:11px;
-}
 #layout-1-wrapper .small-block:last-child{
     border-bottom:none;
     margin-bottom:0;
@@ -222,21 +224,21 @@ div#timegrid_block_4 {
 .timegrid-body .empty-timegrid tr.odd,
 
 #timegrid_block_1.timegrid-container .timegrid-header{
-    background-color: #D22881;
+    background-color: #D2007A;
 }
 #timegrid_block_1.timegrid-container .timegrid-body tr.even{
     background-color: #FFE7F0;
 }
 
 #timegrid_block_2.timegrid-container .timegrid-header{
-    background-color: #A4C749;
+    background-color: #B1CD34;
 }
 #timegrid_block_2.timegrid-container .timegrid-body tr.even{
     background-color: #F4F6D6;
 }
 
 #timegrid_block_3.timegrid-container .timegrid-header{
-    background-color: #F18632;
+    background-color: #F08A0B;
 }
 #timegrid_block_3.timegrid-container .timegrid-body tr.even{
     background-color: #FFE5D0;
