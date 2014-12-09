@@ -38,11 +38,7 @@
             <div id="map-wrapper" class="clearfix">
                 <div id="large-left-blocks">
                     {{ macros.img('line_map_block', attribute(timetable.blocks, 'line_map_block'), 'line_map_img', 'route') }}
-                    <div id="flash_info_top"></div>
-                    <img class="flash-info" src="{{ asset(imgPath ~ 'flash_info.png') }}">
-                    <div id="flash_info_block" class="">
-                        <span class="content">Repérez la période "Anis" ou "Cassis" à consulter, grâce à la couleur du jour de votre voyage indiquée sur le "Calendrier Voyageurs"</span>
-                    </div>
+                    {{ macros.flash_info('flash_info_block', imgPath ~ 'flash_info.png') }}
                 </div>
                 <div id="small-right-blocks">
                     {{ macros.season_validity('text_block_1', currentSeason, 'small-block') }}

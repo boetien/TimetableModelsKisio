@@ -82,7 +82,7 @@ img.divia-logo{
 }
 #layout-1-wrapper.layout-2-overload .information-text-blocks,
 #timetables-wrapper{
-    margin-top:5px;
+    margin-top:11px;
     width:100%;
 }
 #timetables-wrapper .timegrid-container{
@@ -135,7 +135,7 @@ height: auto;
     border:1px solid white;
     border-bottom-color:black;
     margin:5px 0;
-    height:45px;
+    height:65px;
 }
 #layout-1-wrapper .small-block:first-child{
     margin-top: 0;
@@ -144,7 +144,7 @@ height: auto;
     height: 63px;
 }
 #layout-1-wrapper #text_block_3.small-block{
-    height: 85px;
+    height: 55px;
     margin: 10px 0;
 }
 

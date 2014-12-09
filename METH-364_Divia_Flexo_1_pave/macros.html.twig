@@ -6,6 +6,15 @@
     </div>
 {% endmacro %}
 
+{% macro flash_info(id, imgPath) %}
+    <div id="flash_info_top"></div>
+    <img class="flash-info" src="{{ asset(imgPath) }}">
+    <div id="{{ id }}">
+        <span class="content">Repérez la période "Anis" ou "Cassis" à consulter, grâce à la couleur du jour de votre voyage indiquée sur le "Calendrier Voyageurs"</span>
+    </div>
+    <div id="flash_info_bottom"></div>
+{% endmacro %}
+
 {% macro text(id, block, level, class) %}
     <div id="{{ id }}" data-block-level="{{ level }}" data-block-type="text" class="{{ class }}">
     {% if block %}
@@ -45,13 +54,10 @@
 
 {% macro stop_point_pois(id, stopPoint, class) %}
     <div id="{{ id }}"  class="{{ class }}">
-        <div class="title">{{'stop_point.block.pois.title'|trans({}, 'default')}}</div>
+        <div class="title">Point de vente - Relais Divia :</div>
 
         <div class="content">{% spaceless %}
             {% if stopPoint %}
-                {% if stopPoint.getPois() is empty %}
-                    {{'stop_point.block.pois.empty'|trans({'%distance%':stopPoint.getPoiDistance()}, 'default')}}
-                {% endif %}
                 {% for poi in stopPoint.getPois() %}
                     {{ poi.name }}<br>
                 {% endfor %}
