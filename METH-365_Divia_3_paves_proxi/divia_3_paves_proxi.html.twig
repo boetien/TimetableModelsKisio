@@ -1,0 +1,36 @@
+{% extends templatePath ~ "base.html.twig" %}
+
+{% block additionnal_wrapper_class %}multicolor{% endblock %}
+
+{% block timetable_downer_content %}
+    <div id="timetables-wrapper" class="clearfix">
+        {% for i in 1..3 %}
+            {% set id = 'timegrid_block_' ~ i %}
+            {% set block = attribute(timetable.blocks, id) %}
+            {% set addNotes = true %}
+            {% include templatePath ~ "timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : 8} %}
+            {% if i == 2 %}
+                <div class="additionnal-text-blocks green-block">
+                    <div id="" class="centered-text-block text-block-wrapper">
+                        En période "Anis", les horaires de cette ligne ne changent pas.
+                    </div>
+                </div>
+                <div class="additionnal-text-blocks dark-block">
+                    <div id="" class="centered-text-block text-block-wrapper">
+                        Période de vacances :<br/>
+                        20 octobre au 1er novembre - 22 décembre au 3 janvier - 23 février au 7 mars - 27 avril au 9 mai
+                    </div>
+                </div>
+                <div class="clear"></div>
+            {% endif %}
+        {% endfor %}
+        <div class="information-text-blocks timegrid-container">
+            <div id="{{ id }}" class="centered-text-block text-block-wrapper">
+                <div class="title"></div>
+                <div class="relative">
+                    <div class="content"><p>Cette ligne ne fonctionne pas les dimanche et jour férié.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
