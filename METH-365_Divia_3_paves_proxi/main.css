@@ -67,7 +67,7 @@
 }
 #layout-1-wrapper #flash_info_block .content{
     font-weight: bold;
-    font-size: 11px;
+    font-size: 12px;
 }
 /* to align image vertically */
 #layout-1-wrapper #flash_info_block:before{
@@ -212,7 +212,6 @@ img.divia-logo{
     height: 15px;
 }
 
-.timegrid-body .empty-timegrid tr.odd,
 #timegrid_block_1.timegrid-container .timegrid-header{
     background-color: #d2007a;
 }
@@ -277,10 +276,22 @@ img.divia-logo{
     background-color: #b1ca34;
     color:white;
     padding-top: 12px;
+    margin-top: 10px;
 }
 .additionnal-text-blocks.dark-block{
     background-color: #e3e3e3;
     color:black;
     font-size: 8pt;
     padding:6px 5px;
+}
+
+
+#layout-1-wrapper #flash_info_block{
+    float:left;
+    padding-left:0px;
+    font-size: 12px;
+}
+
+.row1-wrapper {
+    height: 184px;
 }

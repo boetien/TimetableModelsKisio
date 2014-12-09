@@ -8,17 +8,26 @@
             {% set id = 'timegrid_block_' ~ i %}
             {% set block = attribute(timetable.blocks, id) %}
             {% set addNotes = true %}
+            {% if i == 1 %}
+                <div class="row1-wrapper">
+            {% endif %}
+            {% if i == 3 %}
+                <div>
+            {% endif %}
             {% include templatePath ~ "timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : 8} %}
             {% if i == 2 %}
-                <div class="additionnal-text-blocks green-block">
-                    <div id="" class="centered-text-block text-block-wrapper">
-                        En période "Anis", les horaires de cette ligne ne changent pas.
-                    </div>
                 </div>
-                <div class="additionnal-text-blocks dark-block">
-                    <div id="" class="centered-text-block text-block-wrapper">
-                        Période de vacances :<br/>
-                        20 octobre au 1er novembre - 22 décembre au 3 janvier - 23 février au 7 mars - 27 avril au 9 mai
+                <div>
+                    <div class="additionnal-text-blocks green-block">
+                        <div id="" class="centered-text-block text-block-wrapper">
+                            En période "Anis", les horaires de cette ligne ne changent pas.
+                        </div>
+                    </div>
+                    <div class="additionnal-text-blocks dark-block">
+                        <div id="" class="centered-text-block text-block-wrapper">
+                            Période de vacances :<br/>
+                            20 octobre au 1er novembre - 22 décembre au 3 janvier - 23 février au 7 mars - 27 avril au 9 mai
+                        </div>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -31,6 +40,7 @@
                     <div class="content"><p>Cette ligne ne fonctionne pas les dimanche et jour férié.</p></div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 {% endblock %}
