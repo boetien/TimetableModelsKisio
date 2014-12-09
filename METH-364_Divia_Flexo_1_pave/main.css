@@ -179,7 +179,7 @@ height: auto;
     color:white;
     font-weight: bold;
     font-size: 10pt;
-    margin-top: 78px;
+    margin-top: 11px;
     height: 50px;
 }
 .information-text-blocks .text-block-wrapper .content{
@@ -203,7 +203,7 @@ height: auto;
 }
 #layout-1-wrapper.proxi-layout #timetables-wrapper .timegrid-container .timegrid-body{
     min-height:0;
-    height: 80px;
+    height: 150px;
 }
 .proxi-layout .centered-dropdown {
     margin-top: -45px;
