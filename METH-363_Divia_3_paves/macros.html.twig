@@ -7,12 +7,12 @@
 {% endmacro %}
 
 {% macro flash_info(id, imgPath) %}
-        <div id="flash_info_top"></div>
-        <img class="flash-info" src="{{ asset(imgPath ~ 'flash_info.png') }}">
-        <div id="{{ id }}">
-            <span class="content">Repérez la période "Anis" ou "Cassis" à consulter, grâce à la couleur du jour de votre voyage indiquée sur le "Calendrier Voyageurs"</span>
-        </div>
-        <div id="flash_info_bottom"></div>
+    <div id="flash_info_top"></div>
+    <img class="flash-info" src="{{ asset(imgPath) }}">
+    <div id="{{ id }}">
+        <span class="content">Repérez la période "Anis" ou "Cassis" à consulter, grâce à la couleur du jour de votre voyage indiquée sur le "Calendrier Voyageurs"</span>
+    </div>
+    <div id="flash_info_bottom"></div>
 {% endmacro %}
 
 {% macro text(id, block, level, class) %}
