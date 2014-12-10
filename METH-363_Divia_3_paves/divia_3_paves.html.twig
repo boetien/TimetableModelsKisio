@@ -15,7 +15,7 @@
             {% else %}
                 {% set nbLines = 12 %}
             {% endif %}
-            {% include templatePath ~ "timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : nbLines} %}
+            {% include "CanalTPMttBundle:Layouts:timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : nbLines} %}
         {% endfor %}
         <div class="information-text-blocks timegrid-container">
             <div id="{{ id }}" class="centered-text-block text-block-wrapper">

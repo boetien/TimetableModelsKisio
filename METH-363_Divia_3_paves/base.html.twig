@@ -1,4 +1,4 @@
-{% import templatePath ~ "macros.html.twig" as macros %}
+{% import "CanalTPMttBundle:Layouts:macros.html.twig" as macros %}
 
 {% extends "CanalTPMttBundle:Layouts:base_layout.html.twig" %}
 
@@ -56,7 +56,7 @@
 
 {% block scripts %}
     {%
-        include templatePath ~ 'common.js.twig'
+        include "CanalTPMttBundle:Layouts:common.js.twig"
         with {
             'editable'          : editable,
             'stopPointLevel'    : stopPointLevel,

@@ -13,12 +13,12 @@
             {% set id = 'timegrid_block_1' %}
             {% set block = attribute(timetable.blocks, id) %}
             {% set nbLines = 4 %}
-            {% include templatePath ~ "timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : nbLines, additionnalClass: 'purple'} %}
+            {% include "CanalTPMttBundle:Layouts:timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : nbLines, additionnalClass: 'purple'} %}
             {% set calendar = attribute(calendars, block.content) %}
             <div class="pad30t">
             {% if calendar %}
             {%
-                include templatePath ~ "notes.html.twig"
+                include "CanalTPMttBundle:Layouts:notes.html.twig"
                 with { 'notes' : calendar.notes, 'computedNotes' : notes, 'calendar' : calendar } only
             %}
             {% endif %}
