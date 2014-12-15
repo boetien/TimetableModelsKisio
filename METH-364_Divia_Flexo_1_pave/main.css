@@ -167,9 +167,8 @@ height: auto;
 .timegrid-body tr{
     height: 15px;
 }
-.purple .timegrid-body tr.even {background-color: #fce3fc}
+.timegrid-body tr.even {background-color: #fce3fc}
 
-.timegrid-body .empty-timegrid tr.odd,
 .timegrid-body .empty-timegrid tr.even{
     background-color: #faedf4;
 }
@@ -290,4 +289,8 @@ img.flash-info {
 #layout-1-wrapper #flash_info_block{
     float:left;
     padding-left:0px;
+}
+
+.external-additional-informations {
+    top: 25%;
 }
