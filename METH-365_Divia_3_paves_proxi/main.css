@@ -26,7 +26,7 @@
     width:100%;
 }
 #layout-1-wrapper #small-right-blocks{
-    width:255px;
+    width:355px;
 }
 #layout-main-wrapper #header #direction-title-wrapper{
     font-size:30px;
@@ -47,17 +47,17 @@
 
 #large-left-blocks {
     float:left;
-    width:825px;
+    width:727px;
 }
 #layout-1-wrapper #flash_info_top{
     height: 225px;
     border-bottom: 1px solid black;
-    margin-left: 36px;
-    width: 95%;
+    margin-left: 37px;
+    width: 94%;
 }
 
 #layout-1-wrapper #flash_info_block{
-    width:94%;
+    width: 93%;
 }
 
 #layout-1-wrapper #flash_info_block{
@@ -67,7 +67,7 @@
 }
 #layout-1-wrapper #flash_info_block .content{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 10.5px;
 }
 /* to align image vertically */
 #layout-1-wrapper #flash_info_block:before{
@@ -111,7 +111,7 @@ img.divia-logo{
     height:225px;
 }
 #layout-1-wrapper #small-right-blocks{
-    height:250px;
+    width:335px;
 }
 #layout-1-wrapper #line_map_block{
     text-align:center;
@@ -179,16 +179,19 @@ img.divia-logo{
     border:1px solid white;
     border-bottom-color:black;
     margin:5px 0;
-    height:45px;
+    height: 43px;
 }
 #layout-1-wrapper .small-block:first-child{
     margin-top: 0;
+}
+#layout-1-wrapper #text_block_3.small-block{
+    height: 88px;
 }
 #layout-1-wrapper #text_block_2.small-block{
     height: 63px;
 }
 #layout-1-wrapper #text_block_1.small-block{
-    height: 85px;
+    height: 45px;
     margin: 10px 0;
 }
 
