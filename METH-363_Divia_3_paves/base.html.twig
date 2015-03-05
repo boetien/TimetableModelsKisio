@@ -24,7 +24,7 @@
                 {{ macros.img('header_route_sign', attribute(timetable.blocks, 'header_route_sign'), 'header_route_sign_img', 'route') }}
                 <div id="direction-title-wrapper" data-block-level="route" data-auto-filled="1">
                     {% if timetable.title is defined %}
-                        {{ 'global.direction'|trans }} {{ timetable.title }}
+                        {{ timetable.title }}
                     {% endif %}
                 </div>
                 <div id="stop-point-title-wrapper" data-block-level="stop_point" data-auto-filled="1">
@@ -45,7 +45,7 @@
                     {{ macros.text('text_block_1', attribute(timetable.blocks, 'text_block_1'), 'route', 'small-block block') }}
                     {{ macros.description('small-block') }}
                     {{ macros.stop_point_pois('text_block_3', stopPoint, 'small-block', 'Points de vente - Relais Divia') }}
-                    {{ macros.stop_point_code('text_block_4', stopPoint, 'small-block') }}
+                    {{ macros.stop_point_code('text_block_4', stopPoint, 'small-block', 'Code TOTEM de cet arrêt') }}
                 </div>
             </div>
             {% block timetable_downer_content %}{% endblock %}
