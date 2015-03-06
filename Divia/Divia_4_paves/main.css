@@ -200,10 +200,6 @@ div#timegrid_block_4 {
     height: 85px;
     margin: 10px 0;
 }
-#layout-1-wrapper #text_block_4.small-block .title,
-#layout-1-wrapper #text_block_4.small-block{
-    font-size: 12px;
-}
 #layout-1-wrapper .small-block:last-child{
     border-bottom:none;
     margin-bottom:0;
@@ -391,6 +387,6 @@ div#timegrid_block_4 {
 }
 
 #layout-1-wrapper #text_block_3.small-block{
-    height: 88px;
+    height: 87px;
     margin: 10px 0;
 }
