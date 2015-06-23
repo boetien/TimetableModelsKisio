@@ -4,8 +4,9 @@
     {{ parent() }}
    <style>
         #small-right-blocks #text_block_code{
-           background: white url("{{ asset(imgPath ~ 'infos_timeo.png') }}") no-repeat bottom left;
+           background: white url("{{ asset(imgPath ~ 'infos_timeo.png') }}") no-repeat left;
            background-size: 77px auto;
+           background-position: 0px 28px;
         }
     </style>
 {% endblock %}
@@ -34,7 +35,7 @@
                 <div id="small-right-blocks">
                     {{ macros.text('text_block_infos', {title:'Titre de bloc', content:'Contenu de bloc'}, 'route', 'small-block block') }}
                     {{ macros.stop_point_pois('text_block_pdv', stopPoint, 'small-block', 'Points de vente') }}
-                    {{ macros.stop_point_code('text_block_code', stopPoint, 'small-block', 'Horaires en temps réel', 'timeo') }}
+                    {{ macros.stop_point_code('text_block_code', stopPoint, 'small-block', 'Horaires en temps réel', 'timeo', 'Code de l\'arrêt :') }}
                 </div>
                 <img class="setram-logo" src="{{ asset(imgPath ~ 'bandeau_logo_setram.png') }}">
         </div>
