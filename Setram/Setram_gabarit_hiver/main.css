@@ -213,24 +213,24 @@
     margin-left: 16px;
     float: right;
 }
-#small-right-blocks #text_block_code.small-block {
+#small-right-blocks #text_block_bottom_code_1.small-block {
     position: relative;
 }
-#small-right-blocks #text_block_code.small-block .content {
+#small-right-blocks #text_block_bottom_code_1.small-block .content {
     font-weight: bold;
     font-size: 25px;
     position: absolute;
     bottom: 0;
     right: 25px;
 }
-.editable #small-right-blocks #text_block_code.small-block .content {
+.editable #small-right-blocks #text_block_bottom_code_1.small-block .content {
     font-size: 10px;
     position: absolute;
     bottom: 0;
     right: 8px;
     width:80px;
 }
-#small-right-blocks #text_block_code.small-block span.note {
+#small-right-blocks #text_block_bottom_code_1.small-block span.note {
     font-size: 10px;
     float: right;
     margin-right: 8px;
