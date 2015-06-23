@@ -33,7 +33,7 @@
 
         <div id="bottom-right-block" class="clearfix">
                 <div id="small-right-blocks">
-                    {{ macros.text('text_block_infos', {title:'Titre de bloc', content:'Contenu de bloc'}, 'route', 'small-block block') }}
+                    {{ macros.text('text_block_infos', attribute(timetable.blocks, 'text_block_infos'), 'route', 'small-block block') }}
                     {{ macros.stop_point_pois('text_block_pdv', stopPoint, 'small-block', 'Points de vente') }}
                     {{ macros.stop_point_code('text_block_code', stopPoint, 'small-block', 'Horaires en temps réel', 'timeo', 'Code de l\'arrêt :') }}
                 </div>
