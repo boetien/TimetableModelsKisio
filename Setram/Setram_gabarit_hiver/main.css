@@ -218,6 +218,13 @@
     bottom: 0;
     right: 25px;
 }
+.editable #small-right-blocks #text_block_code.small-block .content {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+    width:80px;
+}
 #small-right-blocks #text_block_code.small-block span.note {
     font-size: 10px;
     float: right;
