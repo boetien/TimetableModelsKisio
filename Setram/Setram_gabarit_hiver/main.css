@@ -66,7 +66,6 @@
 .line_map_img{
     vertical-align:middle;
 }
-
 #layout-1-wrapper.layout-2-overload .information-text-blocks,
 #timetables-wrapper {
     margin-top:0px;
@@ -74,31 +73,25 @@
     height: 1004px;
     float: right;
 }
-
 #layout-1-wrapper #line_map_block{
     text-align:center;
 }
-
-
 #banner_season_validity.banner-inline{
     font-size:14px;
-    line-height:25px;
+    line-height:20px;
     margin: auto;
     padding:0px 5px;
-    height:25px;
+    height:20px;
     width:551px;
     background-color: black;
     color:white;
 }
-
 #banner_season_validity.banner-inline *{
    float: left;
 }
 #banner_season_validity.banner-inline .title{
    margin-right: 5px;
 }
-
-
 
 #layout-1-wrapper.layout-2-overload .information-text-blocks{
     margin-top:0px;
@@ -107,39 +100,39 @@
 #timetables-wrapper .timegrid-container{
     font-size:12px;
     line-height:15px;
+    margin-bottom: 10px;
     padding:2px;
     position: relative;
     width:100%;
 }
-
 .information-text-blocks .text-block-wrapper .title,
 #timetables-wrapper .timegrid-header{
     background-color:#1a171b;
     color:white;
     font-weight:bold;
     font-size:14px;
-    line-height:25px;
+    line-height:20px;
     padding:0px 5px;
-    height:25px;
+    height:20px;
     width:100%;
 }
-
-
-
 #layout-1-wrapper .timegrid-body .hour-label{
     font-weight:bold;
     font-size: 11px;
     line-height:15px;
+    vertical-align: middle;
+    background-color: black;
+    color: white;
 }
 #layout-1-wrapper .timegrid-column{
-    line-height: 15px;
+    line-height: 23px;
     font-size: 12px;
     width:4.5454%;
+    vertical-align: middle;
 }
 #layout-1-wrapper .timegrid-column sup{
     font-size: 80%;
 }
-
 
 /*right column, body area */
 .timegrid-body{
@@ -151,35 +144,35 @@
     left:0;
 }
 .timegrid-body tr{
-    height: 15px;
+    height: 23px;
 }
 
 #timegrid_block_1.timegrid-container .timegrid-header{
     background-color: #D2007A;
 }
-#timegrid_block_1.timegrid-container .timegrid-body tr.even{
+#timegrid_block_1.timegrid-container .timegrid-body td.even{
     background-color: #FFE7F0;
 }
 
 #timegrid_block_2.timegrid-container .timegrid-header{
     background-color: #B1CD34;
 }
-#timegrid_block_2.timegrid-container .timegrid-body tr.even{
+#timegrid_block_2.timegrid-container .timegrid-body td.even{
     background-color: #F4F6D6;
 }
 
 #timegrid_block_3.timegrid-container .timegrid-header{
     background-color: #F08A0B;
 }
-#timegrid_block_3.timegrid-container .timegrid-body tr.even{
+#timegrid_block_3.timegrid-container .timegrid-body td.even{
     background-color: #FFE5D0;
 }
 
 #timegrid_block_4.timegrid-container .timegrid-header{
-    background-color: #737474;
+    background-color: #198db5;
 }
-#timegrid_block_4.timegrid-container .timegrid-body tr.even{
-    background-color: #E9E8E7;
+#timegrid_block_4.timegrid-container .timegrid-body td.even{
+    background-color: #e5edf5;
 }
 
 /*right column, bottom area */
@@ -224,6 +217,16 @@
     width: 168px;
     margin-left: 16px;
     float: right;
+}
+#small-right-blocks #text_block_code.small-block{
+    position: relative;
+}
+#small-right-blocks #text_block_code.small-block .content{
+    font-weight:bold;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
 }
 img.setram-logo{
     width: 376px;

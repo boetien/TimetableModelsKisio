@@ -19,14 +19,14 @@
             {% set id = 'timegrid_block_' ~ i %}
             {% set block = attribute(timetable.blocks, id) %}
             {% set addNotes = true %}
-            {% if i == 3 %}
+            {% if i == 1 %}
                 {% set nbLines = 10 %}
-            {% elseif i == 4 %}
-                {% set nbLines = 8 %}
+            {% elseif i == 3 %}
+                {% set nbLines = 4 %}
             {% else %}
-                {% set nbLines = 12 %}
+                {% set nbLines = 7 %}
             {% endif %}
-            {% include "CanalTPMttBundle:Layouts:timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : nbLines} %}
+            {% include "CanalTPMttBundle:Layouts:timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : nbLines, 'colorAltern': 'column'} %}
         {% endfor %}
 
 
@@ -34,7 +34,7 @@
                 <div id="small-right-blocks">
                     {{ macros.text('text_block_infos', {title:'Titre de bloc', content:'Contenu de bloc'}, 'route', 'small-block block') }}
                     {{ macros.stop_point_pois('text_block_pdv', stopPoint, 'small-block', 'Points de vente') }}
-                    {{ macros.stop_point_code('text_block_code', stopPoint, 'small-block', 'Code TIMEO de cet arrêt', 'timeo') }}
+                    {{ macros.stop_point_code('text_block_code', stopPoint, 'small-block', 'Horaires en temps réel', 'timeo') }}
                 </div>
                 <img class="setram-logo" src="{{ asset(imgPath ~ 'bandeau_logo_setram.png') }}">
         </div>
