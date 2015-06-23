@@ -6,23 +6,45 @@
 #layout-1-wrapper{
     padding:8px;
 }
-#layout-main-wrapper #header{
+#header{
     background-color:#1a171b;
     color:white;
     -webkit-print-color-adjust: exact;
     height: 64px;
     margin-bottom: 18px;
 }
-#layout-main-wrapper #header #direction-title-wrapper,
-#layout-main-wrapper #header #stop-point-title-wrapper{
-    float:left;
-    padding-left:15px;
+#header #direction-title-wrapper,
+#header #stop-point-title-wrapper{
+    height: 64px;
+    padding-top:5px;
+    padding-left:12px;
+    font-size:14px;
 }
-
-#layout-1-wrapper #line_map_block{
+#header #direction-title-wrapper{
+    float:left;
+}
+#header #stop-point-title-wrapper{
+    padding-right:10px;
+    float: right;
+    max-width: 200px;
+}
+#header #stop-point-title-wrapper .title-header{
+    float: right;
+}
+#header #direction-title-wrapper .title-content,
+#header #stop-point-title-wrapper .title-content{
+    font-weight: bold;
+}
+#header #direction-title-wrapper .title-content{
+    font-size:30px;
+}
+#header #stop-point-title-wrapper .title-content{
+    text-overflow: ellipsis;
+}
+#line_map_block{
     width:100%;
 }
-#layout-main-wrapper #header #header_route_sign{
+#header #header_route_sign{
     width: 64px;
     height: 64px;
     float:left;
@@ -33,16 +55,6 @@
 }
 .header_route_sign_img{
     height:100%;
-}
-#layout-main-wrapper #header #direction-title-wrapper{
-    font-size:30px;
-    line-height:64px;
-}
-#layout-main-wrapper #header #stop-point-title-wrapper{
-    padding-top:5px;
-    padding-right:10px;
-    font-size:14px;
-    float: right;
 }
 #map-wrapper {
     float:left;
@@ -63,21 +75,28 @@
     float: right;
 }
 
-
-
 #layout-1-wrapper #line_map_block{
     text-align:center;
 }
- to align image vertically
-#layout-1-wrapper #line_map_block:before{
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+
+
+#banner_season_validity.banner-inline{
+    font-size:14px;
+    line-height:25px;
+    margin: auto;
+    padding:0px 5px;
+    height:25px;
+    width:551px;
+    background-color: black;
+    color:white;
 }
 
-
-
+#banner_season_validity.banner-inline *{
+   float: left;
+}
+#banner_season_validity.banner-inline .title{
+   margin-right: 5px;
+}
 
 
 
@@ -92,6 +111,7 @@
     position: relative;
     width:100%;
 }
+
 .information-text-blocks .text-block-wrapper .title,
 #timetables-wrapper .timegrid-header{
     background-color:#1a171b;
@@ -103,6 +123,8 @@
     height:25px;
     width:100%;
 }
+
+
 
 #layout-1-wrapper .timegrid-body .hour-label{
     font-weight:bold;
@@ -117,12 +139,6 @@
 #layout-1-wrapper .timegrid-column sup{
     font-size: 80%;
 }
-
-
-
-
-
-
 
 
 /*right column, body area */
@@ -177,25 +193,26 @@
     height:118px;
     font-size: 10pt;
 }
- .editable #small-right-blocks{
-    border: 1px solid black;
-}
 
 #small-right-blocks .small-block{
-    border:1px solid grey;
+    border:1px solid silver;
+    border-top: 3px solid black;
     width: 190px;
     min-height:78px;
     float:left;
+    padding: 2px;
 }
 
-.editable .block.small-block:last-child:hover,
-.editable .block.small-block:hover{
-    border: 1px dashed black;
+.editable .small-block:hover{
+    border: 1px dashed black !important;
+    border-top: 3px solid black !important;
 }
 
 #small-right-blocks .small-block .title{
     font-weight:bold;
-    margin-bottom:2px;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom:8px;
 }
 
 #small-right-blocks .small-block:first-child{

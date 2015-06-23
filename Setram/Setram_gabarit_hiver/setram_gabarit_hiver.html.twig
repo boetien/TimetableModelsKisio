@@ -1,9 +1,20 @@
 {% extends templatePath ~ "base.html.twig" %}
 
+{% block stylesheets %}
+    {{ parent() }}
+   <style>
+        #small-right-blocks #text_block_code{
+           background: white url("{{ asset(imgPath ~ 'infos_timeo.png') }}") no-repeat bottom left;
+           background-size: 77px auto;
+        }
+    </style>
+{% endblock %}
+
 {% block additionnal_wrapper_class %}multicolor{% endblock %}
 
 {% block timetable_downer_content %}
     <div id="timetables-wrapper" class="clearfix">
+        {{ macros.season_validity('banner_season_validity', currentSeason, 'banner-inline') }}
         {% for i in 1..4 %}
             {% set id = 'timegrid_block_' ~ i %}
             {% set block = attribute(timetable.blocks, id) %}
@@ -21,15 +32,12 @@
 
         <div id="bottom-right-block" class="clearfix">
                 <div id="small-right-blocks">
-                    {{ macros.description('small-block') }}
-                    {{ macros.stop_point_pois('text_block_3', stopPoint, 'small-block', 'Points de vente - Relais Setram') }}
-                    {{ macros.stop_point_code('text_block_4', stopPoint, 'small-block', 'Code TIMEO de cet arrêt', 'timeo') }}
+                    {{ macros.text('text_block_infos', {title:'Titre de bloc', content:'Contenu de bloc'}, 'route', 'small-block block') }}
+                    {{ macros.stop_point_pois('text_block_pdv', stopPoint, 'small-block', 'Points de vente') }}
+                    {{ macros.stop_point_code('text_block_code', stopPoint, 'small-block', 'Code TIMEO de cet arrêt', 'timeo') }}
                 </div>
                 <img class="setram-logo" src="{{ asset(imgPath ~ 'bandeau_logo_setram.png') }}">
         </div>
-
-
-
 
     </div>
 {% endblock %}

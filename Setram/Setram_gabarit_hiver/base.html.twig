@@ -26,17 +26,24 @@
             <div id="header" class="clearfix">
                 {{ macros.img('header_route_sign', attribute(timetable.blocks, 'header_route_sign'), 'header_route_sign_img', 'route') }}
                 <div id="direction-title-wrapper" data-block-level="route" data-auto-filled="1">
-                    {% if timetable.title is defined %}
-                        {{ 'global.direction'|trans }} {{ timetable.title }}
-                    {% endif %}
+                    <div class="title-header">{{ 'global.direction'|trans }} :</div>
+                    <span class="clearfix"></span>
+                    <div class="title-content">
+                        {% if timetable.title is defined %}
+                             {{ timetable.title }}
+                        {% endif %}
+                   </div>
                 </div>
                 <div id="stop-point-title-wrapper" data-block-level="stop_point" data-auto-filled="1">
-                    <div class="bold">{{'stop_point.label'|trans({}, 'default')}}:</div>
-                    {% if stopPoint.title is defined %}
-                        {{ stopPoint.title }}
-                    {% else %}
-                        {{'stop_point.block.stop.default'|trans({}, 'default')}}
-                    {% endif %}
+                    <div class="title-header clearfix">{{'stop_point.label'|trans({}, 'default')}} :</div>
+                    <span class="clearfix"></span>
+                    <div class="title-content">
+                        {% if stopPoint.title is defined %}
+                            {{ stopPoint.title }}
+                        {% else %}
+                            {{'stop_point.block.stop.default'|trans({}, 'default')}}
+                        {% endif %}
+                    </div>
                 </div>
             </div>
 
