@@ -262,3 +262,6 @@ img.setram-logo {
     float: right;
     margin-top: -28px;
 }
+.error{
+    border:1px solid red;
+}
