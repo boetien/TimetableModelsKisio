@@ -16,6 +16,7 @@
 {% block timetable_downer_content %}
     <div id="timetables-wrapper" class="clearfix">
         {{ macros.season_validity('banner_season_validity', currentSeason, 'banner-inline') }}
+        <div id="timetables-block-wrapper">
         {% for i in 1..4 %}
             {% set id = 'timegrid_block_' ~ i %}
             {% set block = attribute(timetable.blocks, id) %}
@@ -29,7 +30,7 @@
             {% endif %}
             {% include "CanalTPMttBundle:Layouts:timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : nbLines, 'colorAltern': 'column'} %}
         {% endfor %}
-
+        </div>
 
         <div id="bottom-right-block" class="clearfix">
                 <div id="small-right-blocks">
