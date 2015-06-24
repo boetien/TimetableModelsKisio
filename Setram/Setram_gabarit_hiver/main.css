@@ -150,22 +150,22 @@
     height: 23px;
 }
 #timegrid_block_1.timegrid-container .timegrid-header {
-    background-color: #D2007A;
+    background-color: #e60c80;
 }
 #timegrid_block_1.timegrid-container .timegrid-body td.even {
-    background-color: #FFE7F0;
+    background-color: #fce6f1;
 }
 #timegrid_block_2.timegrid-container .timegrid-header {
-    background-color: #B1CD34;
+    background-color: #89af3f;
 }
 #timegrid_block_2.timegrid-container .timegrid-body td.even {
-    background-color: #F4F6D6;
+    background-color: #f1f6e7;
 }
 #timegrid_block_3.timegrid-container .timegrid-header {
-    background-color: #F08A0B;
+    background-color: #ed6b31;
 }
 #timegrid_block_3.timegrid-container .timegrid-body td.even {
-    background-color: #FFE5D0;
+    background-color: #fdebdf;
 }
 #timegrid_block_4.timegrid-container .timegrid-header {
     background-color: #198db5;
