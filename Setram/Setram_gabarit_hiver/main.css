@@ -1,0 +1,267 @@
+/* layout type Dijon (layout_1) */
+
+#layout-main-wrapper.wrapper-portrait {
+    width: 790px;
+    height: 1116px;
+}
+#layout-1-wrapper {
+    padding: 8px;
+}
+#header {
+    background-color: #1a171b;
+    color: white;
+    -webkit-print-color-adjust: exact;
+    height: 64px;
+    margin-bottom: 18px;
+}
+#header #direction-title-wrapper,
+#header #stop-point-title-wrapper {
+    height: 64px;
+    padding-top: 5px;
+    padding-left: 12px;
+    font-size: 14px;
+}
+#header #direction-title-wrapper {
+    float: left;
+}
+#header #stop-point-title-wrapper {
+    padding-right: 10px;
+    float: right;
+    max-width: 200px;
+}
+#header #stop-point-title-wrapper .title-header {
+    float: right;
+}
+#header #direction-title-wrapper .title-content,
+#header #stop-point-title-wrapper .title-content {
+    font-weight: bold;
+}
+#header #direction-title-wrapper .title-content {
+    font-size: 30px;
+}
+#header #stop-point-title-wrapper .title-content {
+    text-overflow: ellipsis;
+}
+#line_map_block {
+    width: 100%;
+    height: 100%;
+}
+#header #header_route_sign {
+    float: left;
+}
+.editable #header #header_route_sign {
+    width: 64px;
+    height: 64px;
+}
+#header #header_route_sign img{
+    width: 64px;
+    height: 64px;
+}
+.editable #header_route_sign {
+    background-color: white;
+    border-color: black;
+}
+.header_route_sign_img {
+    max-height: 100%;
+    max-width: 100%;
+}
+#map-wrapper {
+    float: left;
+    width: 188px;
+    height: 1004px;
+}
+.line_map_img {
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+}
+#layout-1-wrapper.layout-2-overload .information-text-blocks,
+#timetables-wrapper {
+    margin-top: 0px;
+    width: 555px;
+    height: 1004px;
+    float: right;
+}
+#layout-1-wrapper #line_map_block {
+    text-align: center;
+}
+#banner_season_validity.banner-inline {
+    font-size: 14px;
+    line-height: 20px;
+    margin: auto;
+    padding: 0px 5px;
+    height: 20px;
+    width: 551px;
+    background-color: black;
+    color: white;
+}
+#banner_season_validity.banner-inline * {
+    float: left;
+}
+#banner_season_validity.banner-inline .title {
+    margin-right: 5px;
+}
+#layout-1-wrapper.layout-2-overload .information-text-blocks {
+    margin-top: 0px;
+    width: 100%;
+}
+#timetables-wrapper .timegrid-container {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    padding: 2px;
+    position: relative;
+    width: 100%;
+}
+.information-text-blocks .text-block-wrapper .title,
+#timetables-wrapper .timegrid-header {
+    background-color: #1a171b;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 5px;
+    height: 20px;
+    width: 100%;
+}
+/*right column, body area */
+
+#layout-1-wrapper .timegrid-body {
+    position: relative;
+    width: 100%;
+}
+#layout-1-wrapper .timegrid-body .hour-label {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    vertical-align: middle;
+    background-color: black;
+    color: white;
+}
+#layout-1-wrapper .timegrid-column {
+    line-height: 23px;
+    font-size: 12px;
+    width: 4.5454%;
+    vertical-align: middle;
+}
+#layout-1-wrapper .timegrid-column sup {
+    font-size: 80%;
+}
+#timetables-wrapper .timegrid-body .timetable-notes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.timegrid-body tr {
+    height: 23px;
+}
+#timegrid_block_1 .timegrid-body {
+    /*fix height for error message if too much hours datas*/
+    height: 253px;
+}
+#timegrid_block_1.timegrid-container .timegrid-header {
+    background-color: #e60c80;
+}
+#timegrid_block_1.timegrid-container .timegrid-body td.even {
+    background-color: #fce6f1;
+}
+#timegrid_block_2 .timegrid-body {
+    /*fix height for error message if too much hours datas*/
+    height: 184px;
+}
+#timegrid_block_2.timegrid-container .timegrid-header {
+    background-color: #89af3f;
+}
+#timegrid_block_2.timegrid-container .timegrid-body td.even {
+    background-color: #f1f6e7;
+}
+#timegrid_block_3 .timegrid-body {
+    /*fix height for error message if too much hours datas*/
+    height: 115px;
+}
+#timegrid_block_3.timegrid-container .timegrid-header {
+    background-color: #ed6b31;
+}
+#timegrid_block_3.timegrid-container .timegrid-body td.even {
+    background-color: #fdebdf;
+}
+#timegrid_block_4 .timegrid-body {
+    /*fix height for error message if too much hours datas*/
+    height: 184px;
+}
+#timegrid_block_4.timegrid-container .timegrid-header {
+    background-color: #198db5;
+}
+#timegrid_block_4.timegrid-container .timegrid-body td.even {
+    background-color: #e5edf5;
+}
+/*right column, bottom area */
+
+#bottom-right-block {
+    height: 118px;
+    position: absolute;
+    bottom: 20px;
+}
+#small-right-blocks {
+    width: 555px;
+    height: 118px;
+    font-size: 10pt;
+}
+#small-right-blocks .small-block {
+    border: 1px solid silver;
+    border-top: 3px solid black;
+    width: 190px;
+    min-height: 78px;
+    float: left;
+    padding: 2px;
+}
+.editable .small-block:hover {
+    border: 1px dashed black !important;
+    border-top: 3px solid black !important;
+}
+#small-right-blocks .small-block .title {
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+#small-right-blocks .small-block:first-child {
+    width: 164px;
+    height: 100%;
+    margin-right: 16px;
+}
+#small-right-blocks .small-block:last-child {
+    width: 168px;
+    margin-left: 16px;
+    float: right;
+}
+#small-right-blocks #text_block_bottom_code_1.small-block {
+    position: relative;
+}
+#small-right-blocks #text_block_bottom_code_1.small-block .content {
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+}
+.editable #small-right-blocks #text_block_bottom_code_1.small-block .content {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+    width:80px;
+}
+#small-right-blocks #text_block_bottom_code_1.small-block span.note {
+    font-size: 10px;
+    float: right;
+    margin-right: 8px;
+}
+img.setram-logo {
+    width: 376px;
+    float: right;
+    margin-top: -28px;
+}
+.error{
+    border:1px solid red;
+}

@@ -1,0 +1,70 @@
+{% import "CanalTPMttBundle:Layouts:macros.html.twig" as macros %}
+
+{% extends "CanalTPMttBundle:Layouts:base_layout.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets 'bundles/canaltpmtt/css/main.css'
+                    'bundles/canaltpmtt/css/layouts.css' %}
+        <link rel="stylesheet" media="all" href="{{ asset_url }}?{{ assets_version }}" />
+    {% endstylesheets %}
+
+    <link rel="stylesheet" media="all" href="{{ asset(cssPath ~ 'main.css') }}?{{ assets_version }}" />
+
+    {% stylesheets  'bundles/canaltpmtt/css/print.css'
+                   filter='cssrewrite' output='css/full_layouts_print.css' %}
+        <link rel="stylesheet" media="print" href="{{ asset_url }}?{{ assets_version }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+{% block timetable_content %}
+    <div id="layout-1-wrapper" class="{% block additionnal_wrapper_class %}{% endblock %}">
+        <div class="layout-container">
+            <div id="header" class="clearfix">
+                {{ macros.img('header_route_sign', attribute(timetable.blocks, 'header_route_sign'), 'header_route_sign_img', 'route') }}
+                <div id="direction-title-wrapper" data-block-level="route" data-auto-filled="1">
+                    <div class="title-header">{{ 'global.direction'|trans }} :</div>
+                    <span class="clearfix"></span>
+                    <div class="title-content">
+                        {% if timetable.title is defined %}
+                             {{ timetable.title }}
+                        {% endif %}
+                   </div>
+                </div>
+                <div id="stop-point-title-wrapper" data-block-level="stop_point" data-auto-filled="1">
+                    <div class="title-header clearfix">{{'stop_point.label'|trans({}, 'default')}} :</div>
+                    <span class="clearfix"></span>
+                    <div class="title-content">
+                        {% if stopPoint.title is defined %}
+                            {{ stopPoint.title }}
+                        {% else %}
+                            {{'stop_point.block.stop.default'|trans({}, 'default')}}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <div id="map-wrapper" class="clearfix">
+                    {{ macros.img('line_map_block', attribute(timetable.blocks, 'line_map_block'), 'block line_map_img', 'route') }}
+            </div>
+
+            {% block timetable_downer_content %}{% endblock %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    {%
+        include "CanalTPMttBundle:Layouts:common.js.twig"
+        with {
+            'editable'          : editable,
+            'stopPointLevel'    : stopPointLevel,
+            'externalNetworkId' : externalNetworkId,
+            'blockTypes'        : blockTypes,
+            'timetable'         : timetable,
+            'stopPoint'         : stopPoint,
+            'selector'          : '#layout-1-wrapper' }
+    %}
+{% endblock %}
+
