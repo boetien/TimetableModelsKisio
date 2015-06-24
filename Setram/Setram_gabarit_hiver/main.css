@@ -47,9 +47,15 @@
     height: 100%;
 }
 #header #header_route_sign {
+    float: left;
+}
+.editable #header #header_route_sign {
     width: 64px;
     height: 64px;
-    float: left;
+}
+#header #header_route_sign img{
+    width: 64px;
+    height: 64px;
 }
 .editable #header_route_sign {
     background-color: white;
@@ -120,10 +126,6 @@
 }
 /*right column, body area */
 
-#timetables-block-wrapper {
-    max-height: 865px;
-     overflow: hidden;
-}
 #layout-1-wrapper .timegrid-body {
     position: relative;
     width: 100%;
@@ -153,11 +155,19 @@
 .timegrid-body tr {
     height: 23px;
 }
+#timegrid_block_1 .timegrid-body {
+    /*fix height for error message if too much hours datas*/
+    height: 253px;
+}
 #timegrid_block_1.timegrid-container .timegrid-header {
     background-color: #e60c80;
 }
 #timegrid_block_1.timegrid-container .timegrid-body td.even {
     background-color: #fce6f1;
+}
+#timegrid_block_2 .timegrid-body {
+    /*fix height for error message if too much hours datas*/
+    height: 184px;
 }
 #timegrid_block_2.timegrid-container .timegrid-header {
     background-color: #89af3f;
@@ -165,11 +175,19 @@
 #timegrid_block_2.timegrid-container .timegrid-body td.even {
     background-color: #f1f6e7;
 }
+#timegrid_block_3 .timegrid-body {
+    /*fix height for error message if too much hours datas*/
+    height: 115px;
+}
 #timegrid_block_3.timegrid-container .timegrid-header {
     background-color: #ed6b31;
 }
 #timegrid_block_3.timegrid-container .timegrid-body td.even {
     background-color: #fdebdf;
+}
+#timegrid_block_4 .timegrid-body {
+    /*fix height for error message if too much hours datas*/
+    height: 184px;
 }
 #timegrid_block_4.timegrid-container .timegrid-header {
     background-color: #198db5;
