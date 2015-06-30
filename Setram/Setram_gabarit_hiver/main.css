@@ -23,6 +23,8 @@
 }
 #header #direction-title-wrapper {
     float: left;
+    width: 526px;
+    max-height: 40px;
 }
 #header #stop-point-title-wrapper {
     padding-right: 10px;
@@ -39,7 +41,13 @@
     font-weight: bold;
 }
 #header #direction-title-wrapper .title-content {
+    height: 100%;
     font-size: 30px;
+    overflow: hidden;
+}
+#header #direction-title-wrapper .title-content span{
+    font-style: italic;
+    font-size: 24px;
 }
 #header #stop-point-title-wrapper .title-content {
     position: absolute;
@@ -55,11 +63,8 @@
 #header #header_route_sign {
     float: left;
 }
+#header #header_route_sign img,
 .editable #header #header_route_sign {
-    width: 64px;
-    height: 64px;
-}
-#header #header_route_sign img{
     width: 64px;
     height: 64px;
 }
