@@ -38,11 +38,13 @@
 #header #direction-title-wrapper .title-content,
 #header #stop-point-title-wrapper .title-content {
     font-weight: bold;
+    white-space: nowrap;
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #header #direction-title-wrapper .title-content {
-    max-height: 40px;
     font-size: 30px;
-    overflow: hidden;
 }
 #header #direction-title-wrapper .title-content span {
     font-style: italic;
@@ -50,10 +52,10 @@
 }
 #header #stop-point-title-wrapper .title-content {
     position: absolute;
-    max-height: 40px;
     bottom: 2px;
     right: 8px;
-    overflow: hidden;
+    width: inherit;
+    white-space: normal;
 }
 #line_map_block {
     width: 100%;
