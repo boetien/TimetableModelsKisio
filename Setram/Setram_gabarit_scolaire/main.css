@@ -189,7 +189,7 @@
 }
 #timegrid_block_3 .timegrid-body {
     /*fix height for error message if too much hours datas*/
-    height: 115px;
+    height: 138px;
 }
 #timegrid_block_3.timegrid-container .timegrid-header {
     background-color: #ed6b31;

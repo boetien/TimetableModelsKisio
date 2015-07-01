@@ -19,7 +19,10 @@
 
 {% block timetable_content %}
     <div id="layout-1-wrapper" class="{% block additionnal_wrapper_class %}{% endblock %}">
+
         <div class="layout-container">
+
+
             <div id="header" class="clearfix">
                 {{ macros.img('header_route_sign', attribute(timetable.blocks, 'header_route_sign'), 'header_route_sign_img', 'route') }}
                 <div id="direction-title-wrapper" data-block-level="route" data-auto-filled="1">
@@ -28,6 +31,9 @@
                     <div class="title-content">
                         {% if timetable.title is defined %}
                              {{ timetable.title }}
+                        {% endif %}
+                        {% if stopPoint.city is defined %}
+                            <span>- {{ stopPoint.city }}</span>
                         {% endif %}
                    </div>
                 </div>

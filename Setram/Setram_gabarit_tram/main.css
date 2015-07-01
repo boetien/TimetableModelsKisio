@@ -169,7 +169,7 @@
 }
 #timegrid_block_1 .timegrid-body {
     /*fix height for error message if too much hours datas*/
-    height: 253px;
+    height: 230px;
 }
 #timegrid_block_1.timegrid-container .timegrid-header {
     background-color: #e60c80;
@@ -189,13 +189,23 @@
 }
 #timegrid_block_3 .timegrid-body {
     /*fix height for error message if too much hours datas*/
-    height: 115px;
+    height: 138px;
 }
 #timegrid_block_3.timegrid-container .timegrid-header {
     background-color: #ed6b31;
 }
 #timegrid_block_3.timegrid-container .timegrid-body td.even {
     background-color: #fdebdf;
+}
+#timegrid_block_4 .timegrid-body {
+    /*fix height for error message if too much hours datas*/
+    height: 184px;
+}
+#timegrid_block_4.timegrid-container .timegrid-header {
+    background-color: #198db5;
+}
+#timegrid_block_4.timegrid-container .timegrid-body td.even {
+    background-color: #e5edf5;
 }
 /*right column, bottom area */
 
