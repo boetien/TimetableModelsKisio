@@ -1,8 +1,9 @@
-/* layout type Dijon (layout_1) */
+/* layout type Setram */
 
 #layout-main-wrapper.wrapper-portrait {
     width: 790px;
     height: 1116px;
+    font-family : 'Myriad pro', 'sans-serif';
 }
 #layout-1-wrapper {
     padding: 8px;
@@ -19,7 +20,7 @@
     height: 64px;
     padding-top: 5px;
     padding-left: 12px;
-    font-size: 14px;
+    font-size: 16px;
 }
 #header #direction-title-wrapper {
     float: left;
@@ -44,11 +45,12 @@
     text-overflow: ellipsis;
 }
 #header #direction-title-wrapper .title-content {
-    font-size: 30px;
+    font-size: 32px;
 }
 #header #direction-title-wrapper .title-content span {
     font-style: italic;
-    font-size: 24px;
+    font-size: 25px;
+    font-weight: normal;
 }
 #header #stop-point-title-wrapper .title-content {
     position: absolute;
@@ -101,7 +103,7 @@
     font-size: 14px;
     line-height: 20px;
     margin: auto;
-    padding: 0px 5px;
+    padding: 2px 5px 0px 5px;
     height: 20px;
     width: 551px;
     background-color: black;
@@ -173,6 +175,7 @@
 }
 #timegrid_block_1.timegrid-container .timegrid-header {
     background-color: #e60c80;
+    padding-top:2px;
 }
 #timegrid_block_1.timegrid-container .timegrid-body td.even {
     background-color: #fce6f1;
@@ -233,9 +236,10 @@
 }
 #small-right-blocks .small-block .title {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     font-style: italic;
-    margin-bottom: 8px;
+    margin-left: 2px;
+    margin-bottom: 6px;
 }
 #small-right-blocks .small-block:first-child {
     width: 164px;
@@ -255,7 +259,7 @@
     font-size: 25px;
     position: absolute;
     bottom: 0;
-    right: 25px;
+    right: 30px;
 }
 .editable #small-right-blocks #text_block_bottom_code_1.small-block .content {
     font-size: 10px;
@@ -267,7 +271,7 @@
 #small-right-blocks #text_block_bottom_code_1.small-block span.note {
     font-size: 10px;
     float: right;
-    margin-right: 8px;
+    margin-right: 16px;
 }
 img.setram-logo {
     width: 376px;
