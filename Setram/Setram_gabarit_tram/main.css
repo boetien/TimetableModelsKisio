@@ -20,16 +20,16 @@
     height: 64px;
     padding-top: 5px;
     padding-left: 12px;
-    font-size: 16px;
+    font-size: 18px;
 }
 #header #direction-title-wrapper {
     float: left;
-    width: 526px;
+    width: 551px;
 }
 #header #stop-point-title-wrapper {
     padding-right: 10px;
     float: right;
-    width: 180px;
+    width: 135px;
     text-align: right;
     position: relative;
 }
@@ -40,23 +40,35 @@
 #header #stop-point-title-wrapper .title-content {
     font-weight: bold;
     white-space: nowrap;
-    max-height: 40px;
+    max-height: 46px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 #header #direction-title-wrapper .title-content {
-    font-size: 32px;
+    font-size: 42px;
+    margin-top: -12px;
 }
 #header #direction-title-wrapper .title-content span {
     font-style: italic;
-    font-size: 25px;
+    font-size: 32px;
     font-weight: normal;
+}
+#header #stop-point-title-wrapper #white-stripe{
+    display: inline-block;
+    height: 64px;
+    width: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
 }
 #header #stop-point-title-wrapper .title-content {
     position: absolute;
-    bottom: 2px;
+    bottom: 0;
     right: 8px;
-    width: inherit;
+    width: 130px;
+    line-height: 18px;
+    max-height: 36px;
     white-space: normal;
 }
 #line_map_block {
