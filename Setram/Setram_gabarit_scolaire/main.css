@@ -294,6 +294,9 @@
     margin-left: 16px;
     float: right;
 }
+#small-right-blocks #text_block_bottom_infos_1.small-block .content{
+    font-size: 13px;
+}
 #small-right-blocks #text_block_bottom_code_1.small-block {
     position: relative;
 }
