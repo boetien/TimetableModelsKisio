@@ -2,12 +2,48 @@
 
 @font-face {
     font-family: 'setram-mp';
-    src: url('fonts/myriad-pro-regular.ttf') format('truetype');
+    src: url('fonts/myriad-pro-regular.eot');
+    src: url('fonts/myriad-pro-regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/myriad-pro-regular.woff') format('woff'),
+    url('fonts/myriad-pro-regular.ttf') format('truetype'),
+    url('fonts/myriad-pro-regular.svg#svgFontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'setram-mp';
+    src: url('fonts/myriad-pro-bold.eot');
+    src: url('fonts/myriad-pro-bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/myriad-pro-bold.woff') format('woff'),
+    url('fonts/myriad-pro-bold.ttf') format('truetype'),
+    url('fonts/myriad-pro-bold.svg#svgFontName') format('svg');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'setram-mp';
+    src: url('fonts/myriad-pro-italic.eot');
+    src: url('fonts/myriad-pro-italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/myriad-pro-italic.woff') format('woff'),
+    url('fonts/myriad-pro-italic.ttf') format('truetype'),
+    url('fonts/myriad-pro-italic.svg#svgFontName') format('svg');
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'setram-mp';
+    src: url('fonts/myriad-pro-bolditalic.eot');
+    src: url('fonts/myriad-pro-bolditalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/myriad-pro-bolditalic.woff') format('woff'),
+    url('fonts/myriad-pro-bolditalic.ttf') format('truetype'),
+    url('fonts/myriad-pro-bolditalic.svg#svgFontName') format('svg');
+    font-style: italic;
+    font-weight: bold;
 }
 #layout-main-wrapper.wrapper-portrait {
     width: 790px;
     height: 1116px;
-    font-family : 'setram-mp', 'Myriad Pro', 'sans-serif';
+    font-family : 'Myriad Pro', 'setram-mp';
 }
 #layout-1-wrapper {
     padding: 8px;
