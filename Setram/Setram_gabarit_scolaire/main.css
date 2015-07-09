@@ -1,9 +1,13 @@
 /* layout type Setram 3 timegrids */
 
+@font-face {
+    font-family: 'setram-mp';
+    src: url('fonts/myriad-pro-regular.ttf') format('truetype');
+}
 #layout-main-wrapper.wrapper-portrait {
     width: 790px;
     height: 1116px;
-    font-family : 'Myriad pro', 'sans-serif';
+    font-family : 'setram-mp', 'Myriad Pro', 'sans-serif';
 }
 #layout-1-wrapper {
     padding: 8px;
@@ -24,12 +28,12 @@
 }
 #header #direction-title-wrapper {
     float: left;
-    width: 551px;
+    width: 546px;
 }
 #header #stop-point-title-wrapper {
     padding-right: 10px;
     float: right;
-    width: 135px;
+    width: 140px;
     text-align: right;
     position: relative;
 }
