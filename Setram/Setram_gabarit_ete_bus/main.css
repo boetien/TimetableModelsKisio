@@ -224,7 +224,7 @@
 }
 #timegrid_block_1 .timegrid-body {
     /*fix height for error message if too much hours datas*/
-    height: 253px;
+    height: 230px;
 }
 #timegrid_block_1.timegrid-container .timegrid-header {
     background-color: #e60c80;
@@ -312,7 +312,7 @@
     position: absolute;
     bottom: 0;
     right: 8px;
-    width:80px;
+    width: 80px;
 }
 #small-right-blocks #text_block_bottom_code_1.small-block span.note {
     font-size: 10px;
@@ -325,5 +325,5 @@ img.setram-logo {
     margin-top: -28px;
 }
 .error{
-    border:1px solid red;
+    border: 1px solid red;
 }

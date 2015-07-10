@@ -223,7 +223,7 @@
 }
 #timegrid_block_1 .timegrid-body {
     /*fix height for error message if too much hours datas*/
-    height: 230px;
+    height: 253px;
 }
 #timegrid_block_1.timegrid-container .timegrid-header {
     background-color: #e60c80;
@@ -244,7 +244,7 @@
 }
 #timegrid_block_3 .timegrid-body {
     /*fix height for error message if too much hours datas*/
-    height: 138px;
+    height: 115px;
 }
 #timegrid_block_3.timegrid-container .timegrid-header {
     background-color: #ed6b31;
@@ -321,7 +321,7 @@
     position: absolute;
     bottom: 0;
     right: 8px;
-    width:80px;
+    width: 80px;
 }
 #small-right-blocks #text_block_bottom_code_1.small-block span.note {
     font-size: 10px;
@@ -334,5 +334,5 @@ img.setram-logo {
     margin-top: -28px;
 }
 .error{
-    border:1px solid red;
+    border: 1px solid red;
 }
