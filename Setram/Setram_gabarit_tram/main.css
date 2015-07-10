@@ -1,9 +1,49 @@
 /* layout type Setram 4 timegrids */
 
+@font-face {
+    font-family: 'setram-mp';
+    src: url('fonts/myriad-pro-regular.eot');
+    src: url('fonts/myriad-pro-regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/myriad-pro-regular.woff') format('woff'),
+    url('fonts/myriad-pro-regular.ttf') format('truetype'),
+    url('fonts/myriad-pro-regular.svg#svgFontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'setram-mp';
+    src: url('fonts/myriad-pro-bold.eot');
+    src: url('fonts/myriad-pro-bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/myriad-pro-bold.woff') format('woff'),
+    url('fonts/myriad-pro-bold.ttf') format('truetype'),
+    url('fonts/myriad-pro-bold.svg#svgFontName') format('svg');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'setram-mp';
+    src: url('fonts/myriad-pro-italic.eot');
+    src: url('fonts/myriad-pro-italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/myriad-pro-italic.woff') format('woff'),
+    url('fonts/myriad-pro-italic.ttf') format('truetype'),
+    url('fonts/myriad-pro-italic.svg#svgFontName') format('svg');
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'setram-mp';
+    src: url('fonts/myriad-pro-bolditalic.eot');
+    src: url('fonts/myriad-pro-bolditalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/myriad-pro-bolditalic.woff') format('woff'),
+    url('fonts/myriad-pro-bolditalic.ttf') format('truetype'),
+    url('fonts/myriad-pro-bolditalic.svg#svgFontName') format('svg');
+    font-style: italic;
+    font-weight: bold;
+}
 #layout-main-wrapper.wrapper-portrait {
     width: 790px;
     height: 1116px;
-    font-family : 'Myriad pro', 'sans-serif';
+    font-family : 'Myriad Pro', 'setram-mp';
 }
 #layout-1-wrapper {
     padding: 8px;
@@ -24,12 +64,12 @@
 }
 #header #direction-title-wrapper {
     float: left;
-    width: 551px;
+    width: 560px;
 }
 #header #stop-point-title-wrapper {
     padding-right: 10px;
     float: right;
-    width: 135px;
+    width: 148px;
     text-align: right;
     position: relative;
 }
@@ -66,7 +106,7 @@
     position: absolute;
     bottom: 0;
     right: 8px;
-    width: 130px;
+    width: 135px;
     line-height: 18px;
     max-height: 36px;
     white-space: normal;
@@ -262,6 +302,9 @@
     width: 168px;
     margin-left: 16px;
     float: right;
+}
+#small-right-blocks #text_block_bottom_infos_1.small-block .content{
+    font-size: 13px;
 }
 #small-right-blocks #text_block_bottom_code_1.small-block {
     position: relative;
