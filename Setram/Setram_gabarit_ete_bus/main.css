@@ -1,49 +1,19 @@
 /* layout type Setram 3 timegrids */
 
 @font-face {
-    font-family: 'setram-mp';
-    src: url('fonts/myriad-pro-regular.eot');
-    src: url('fonts/myriad-pro-regular.eot?#iefix') format('embedded-opentype'),
-    url('fonts/myriad-pro-regular.woff') format('woff'),
-    url('fonts/myriad-pro-regular.ttf') format('truetype'),
-    url('fonts/myriad-pro-regular.svg#svgFontName') format('svg');
+    font-family: 'setram-drds';
+    src: url('fonts/DroidSans-webfont.eot');
+    src: url('fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/DroidSans-webfont.woff') format('woff'),
+    url('fonts/DroidSans-webfont.ttf') format('truetype'),
+    url('fonts/DroidSans-webfont.svg#svgFontName') format('svg');
     font-style: normal;
     font-weight: normal;
-}
-@font-face {
-    font-family: 'setram-mp';
-    src: url('fonts/myriad-pro-bold.eot');
-    src: url('fonts/myriad-pro-bold.eot?#iefix') format('embedded-opentype'),
-    url('fonts/myriad-pro-bold.woff') format('woff'),
-    url('fonts/myriad-pro-bold.ttf') format('truetype'),
-    url('fonts/myriad-pro-bold.svg#svgFontName') format('svg');
-    font-style: normal;
-    font-weight: bold;
-}
-@font-face {
-    font-family: 'setram-mp';
-    src: url('fonts/myriad-pro-italic.eot');
-    src: url('fonts/myriad-pro-italic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/myriad-pro-italic.woff') format('woff'),
-    url('fonts/myriad-pro-italic.ttf') format('truetype'),
-    url('fonts/myriad-pro-italic.svg#svgFontName') format('svg');
-    font-style: italic;
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'setram-mp';
-    src: url('fonts/myriad-pro-bolditalic.eot');
-    src: url('fonts/myriad-pro-bolditalic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/myriad-pro-bolditalic.woff') format('woff'),
-    url('fonts/myriad-pro-bolditalic.ttf') format('truetype'),
-    url('fonts/myriad-pro-bolditalic.svg#svgFontName') format('svg');
-    font-style: italic;
-    font-weight: bold;
 }
 #layout-main-wrapper.wrapper-portrait {
     width: 790px;
     height: 1116px;
-    font-family : 'Myriad Pro', 'setram-mp';
+    font-family : 'Droid Sans', 'setram-drds';
 }
 #layout-1-wrapper {
     padding: 8px;
@@ -60,7 +30,7 @@
     height: 64px;
     padding-top: 5px;
     padding-left: 12px;
-    font-size: 18px;
+    font-size: 16px;
 }
 #header #direction-title-wrapper {
     float: left;
@@ -80,12 +50,12 @@
 #header #stop-point-title-wrapper .title-content {
     font-weight: bold;
     white-space: nowrap;
-    max-height: 46px;
+    max-height: 49px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 #header #direction-title-wrapper .title-content {
-    font-size: 42px;
+    font-size: 40px;
     margin-top: -12px;
 }
 #header #direction-title-wrapper .title-content span {
@@ -104,10 +74,10 @@
 }
 #header #stop-point-title-wrapper .title-content {
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     right: 8px;
     width: 135px;
-    line-height: 18px;
+    line-height: 16px;
     max-height: 36px;
     white-space: normal;
 }
@@ -156,7 +126,7 @@
     line-height: 20px;
     margin: auto;
     margin-bottom: 10px;
-    padding: 2px 5px 0px 5px;
+    padding: 0px 5px;
     height: 20px;
     width: 551px;
     background-color: black;
@@ -228,7 +198,6 @@
 }
 #timegrid_block_1.timegrid-container .timegrid-header {
     background-color: #e60c80;
-    padding-top:2px;
 }
 #timegrid_block_1.timegrid-container .timegrid-body td.even {
     background-color: #fce6f1;
@@ -279,7 +248,7 @@
 }
 #small-right-blocks .small-block .title {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
     margin-left: 2px;
     margin-bottom: 6px;
@@ -294,18 +263,18 @@
     margin-left: 16px;
     float: right;
 }
-#small-right-blocks #text_block_bottom_infos_1.small-block .content{
-    font-size: 13px;
+#small-right-blocks .small-block .content{
+    font-size: 12px;
 }
 #small-right-blocks #text_block_bottom_code_1.small-block {
     position: relative;
 }
 #small-right-blocks #text_block_bottom_code_1.small-block .content {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
     position: absolute;
-    bottom: 0;
-    right: 30px;
+    bottom: -2px;
+    right: 25px;
 }
 .editable #small-right-blocks #text_block_bottom_code_1.small-block .content {
     font-size: 10px;
@@ -317,7 +286,7 @@
 #small-right-blocks #text_block_bottom_code_1.small-block span.note {
     font-size: 10px;
     float: right;
-    margin-right: 16px;
+    margin-right: 8px;
 }
 img.setram-logo {
     width: 376px;
