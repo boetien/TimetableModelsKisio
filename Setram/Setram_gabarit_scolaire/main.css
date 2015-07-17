@@ -10,20 +10,10 @@
     font-style: normal;
     font-weight: normal;
 }
-@font-face {
-    font-family: 'setram-drds';
-    src: url('fonts/DroidSans-Bold-webfont.eot');
-    src: url('fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('fonts/DroidSans-Bold-webfont.woff') format('woff'),
-    url('fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
-    url('fonts/DroidSans-Bold-webfont.svg#svgFontName') format('svg');
-    font-style: normal;
-    font-weight: bold;
-}
 #layout-main-wrapper.wrapper-portrait {
     width: 790px;
     height: 1116px;
-    font-family : 'setram-drds';
+    font-family : 'Droid Sans', 'setram-drds';
 }
 #layout-1-wrapper {
     padding: 8px;
