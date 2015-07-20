@@ -1,8 +1,19 @@
-/* layout type Dijon (layout_1) */
+/* layout type Setram 3 timegrids */
 
+@font-face {
+    font-family: 'setram-drds';
+    src: url('fonts/DroidSans-webfont.eot');
+    src: url('fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/DroidSans-webfont.woff') format('woff'),
+    url('fonts/DroidSans-webfont.ttf') format('truetype'),
+    url('fonts/DroidSans-webfont.svg#svgFontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
 #layout-main-wrapper.wrapper-portrait {
     width: 790px;
     height: 1116px;
+    font-family : 'Droid Sans', 'setram-drds';
 }
 #layout-1-wrapper {
     padding: 8px;
@@ -19,16 +30,16 @@
     height: 64px;
     padding-top: 5px;
     padding-left: 12px;
-    font-size: 14px;
+    font-size: 16px;
 }
 #header #direction-title-wrapper {
     float: left;
-    width: 526px;
+    width: 559px;
 }
 #header #stop-point-title-wrapper {
     padding-right: 10px;
     float: right;
-    width: 180px;
+    width: 148px;
     text-align: right;
     position: relative;
 }
@@ -39,22 +50,36 @@
 #header #stop-point-title-wrapper .title-content {
     font-weight: bold;
     white-space: nowrap;
-    max-height: 40px;
+    max-height: 49px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 #header #direction-title-wrapper .title-content {
-    font-size: 30px;
+    font-size: 40px;
+    margin-top: -12px;
 }
 #header #direction-title-wrapper .title-content span {
     font-style: italic;
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: normal;
+}
+#header #stop-point-title-wrapper #white-stripe{
+    display: inline-block;
+    height: 64px;
+    width: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
 }
 #header #stop-point-title-wrapper .title-content {
     position: absolute;
-    bottom: 2px;
+    bottom: 0;
+    padding-bottom: 2px;
     right: 8px;
-    width: inherit;
+    width: 135px;
+    line-height: 17px;
+    max-height: 36px;
     white-space: normal;
 }
 #line_map_block {
@@ -101,6 +126,7 @@
     font-size: 14px;
     line-height: 20px;
     margin: auto;
+    margin-bottom: 10px;
     padding: 0px 5px;
     height: 20px;
     width: 551px;
@@ -169,7 +195,7 @@
 }
 #timegrid_block_1 .timegrid-body {
     /*fix height for error message if too much hours datas*/
-    height: 253px;
+    height: 230px;
 }
 #timegrid_block_1.timegrid-container .timegrid-header {
     background-color: #e60c80;
@@ -189,7 +215,7 @@
 }
 #timegrid_block_3 .timegrid-body {
     /*fix height for error message if too much hours datas*/
-    height: 115px;
+    height: 138px;
 }
 #timegrid_block_3.timegrid-container .timegrid-header {
     background-color: #ed6b31;
@@ -223,9 +249,10 @@
 }
 #small-right-blocks .small-block .title {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     font-style: italic;
-    margin-bottom: 8px;
+    margin-left: 2px;
+    margin-bottom: 6px;
 }
 #small-right-blocks .small-block:first-child {
     width: 164px;
@@ -237,14 +264,17 @@
     margin-left: 16px;
     float: right;
 }
+#small-right-blocks .small-block .content{
+    font-size: 12px;
+}
 #small-right-blocks #text_block_bottom_code_1.small-block {
     position: relative;
 }
 #small-right-blocks #text_block_bottom_code_1.small-block .content {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     right: 25px;
 }
 .editable #small-right-blocks #text_block_bottom_code_1.small-block .content {
@@ -252,7 +282,7 @@
     position: absolute;
     bottom: 0;
     right: 8px;
-    width:80px;
+    width: 80px;
 }
 #small-right-blocks #text_block_bottom_code_1.small-block span.note {
     font-size: 10px;
@@ -265,5 +295,5 @@ img.setram-logo {
     margin-top: -28px;
 }
 .error{
-    border:1px solid red;
+    border: 1px solid red;
 }
