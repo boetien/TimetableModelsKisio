@@ -32,8 +32,8 @@
                         {% if timetable.title is defined %}
                              {{ timetable.title }}
                         {% endif %}
-                        {% if stopPoint.city is defined %}
-                            <span>- {{ stopPoint.city }}</span>
+                        {% if timetable.directionCity is defined %}
+                            <span>- {{ timetable.directionCity }}</span>
                         {% endif %}
                    </div>
                 </div>
