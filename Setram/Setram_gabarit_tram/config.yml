@@ -1,4 +1,8 @@
-label: Setram Gabarit Eté Tram 31Juillet15
-templateName: setram_gabarit_ete_tram.html.twig
-previewFileName: fond_GabaritEteTram.jpg
-orientation: 1
+layout:
+    label: Setram Gabarit Eté Tram 31Juillet15
+    previewFileName: fond_GabaritEteTram.jpg
+    orientation: 1
+
+templates:
+    stop:
+        file: setram_gabarit_ete_tram.html.twig
