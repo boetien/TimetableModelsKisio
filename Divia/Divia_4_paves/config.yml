@@ -1,4 +1,8 @@
-label: Divia 4 paves 21Juillet2015
-templateName: divia_1.html.twig
-previewFileName: divia_1.png
-orientation: 0
+layout:
+    label: Divia 4 paves 21Juillet2015
+    previewFileName: divia_1.png
+    orientation: 0
+
+templates:
+    stop:
+        file: divia_1.html.twig
