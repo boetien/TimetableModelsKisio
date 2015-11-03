@@ -1,4 +1,8 @@
-label: Flexo
-templateName: flexo.html.twig
-previewFileName: Flexo.png
-orientation: 0
+layout:
+    label: Flexo
+    previewFileName: Flexo.png
+    orientation: 0
+
+templates:
+    stop:
+        file: flexo.html.twig
