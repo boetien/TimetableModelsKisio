@@ -18,7 +18,7 @@
         {{ macros.season_validity('banner_season_validity', currentSeason, 'banner-inline') }}
         {% for i in 1..3 %}
             {% set id = 'timegrid_block_' ~ i %}
-            {% set block = attribute(timetable.blocks, id) %}
+            {% set block = attribute(stopTimetable.blocks, id) %}
             {% set addNotes = true %}
             {% if i == 1 %}
                 {% set nbLines = 9 %}
@@ -33,7 +33,7 @@
 
         <div id="bottom-right-block" class="clearfix">
                 <div id="small-right-blocks">
-                    {{ macros.text('text_block_bottom_infos_1', attribute(timetable.blocks, 'text_block_bottom_infos_1'), 'route', 'small-block block') }}
+                    {{ macros.text('text_block_bottom_infos_1', attribute(stopTimetable.blocks, 'text_block_bottom_infos_1'), 'route', 'small-block block') }}
                     {{ macros.stop_point_pois('text_block_bottom_pdv_1', stopPoint, 'small-block', 'Point(s) de vente') }}
                     {{ macros.stop_point_code('text_block_bottom_code_1', stopPoint, 'small-block', 'Horaires en temps réel', 'Timeo', 'Code de l\'arrêt :') }}
                 </div>
