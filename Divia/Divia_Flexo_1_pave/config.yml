@@ -1,4 +1,8 @@
-label: Divia 1 pave Flexo 27Novembre2015
-templateName: flexo.html.twig
-previewFileName: preview.jpg
-orientation: 0
+layout:
+    label: Divia 1 pave Flexo 27Novembre2015
+    previewFileName: preview.jpg
+    orientation: 0
+
+templates:
+    stop:
+        file: flexo.html.twig

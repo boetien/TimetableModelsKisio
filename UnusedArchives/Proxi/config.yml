@@ -1,4 +1,8 @@
-label: Proxi
-templateName: proxi.html.twig
-previewFileName: Proxi.png
-orientation: 0
+layout:
+    label: Proxi
+    previewFileName: Proxi.png
+    orientation: 0
+
+templates:
+    stop:
+        file: proxi.html.twig

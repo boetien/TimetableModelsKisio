@@ -17,23 +17,23 @@
     {% endstylesheets %}
 {% endblock %}
 
-{% block timetable_content %}
+{% block stop_timetable_content %}
     <div id="layout-1-wrapper" class="{% block additionnal_wrapper_class %}{% endblock %}">
 
         <div class="layout-container">
 
 
             <div id="header" class="clearfix">
-                {{ macros.img('header_route_sign', attribute(timetable.blocks, 'header_route_sign'), 'header_route_sign_img', 'route') }}
+                {{ macros.img('header_route_sign', attribute(stopTimetable.blocks, 'header_route_sign'), 'header_route_sign_img', 'route') }}
                 <div id="direction-title-wrapper" data-block-level="route" data-auto-filled="1">
                     <div class="title-header">{{ 'global.direction'|trans }} :</div>
                     <span class="clearfix"></span>
                     <div class="title-content">
-                        {% if timetable.title is defined %}
-                             {{ timetable.title }}
+                        {% if stopTimetable.title is defined %}
+                             {{ stopTimetable.title }}
                         {% endif %}
-                        {% if timetable.directionCity is defined %}
-                            <span>- {{ timetable.directionCity }}</span>
+                        {% if stopTimetable.directionCity is defined %}
+                            <span>- {{ stopTimetable.directionCity }}</span>
                         {% endif %}
                    </div>
                 </div>
@@ -52,7 +52,7 @@
             </div>
 
             <div id="map-wrapper" class="clearfix">
-                    {{ macros.img('line_map_block', attribute(timetable.blocks, 'line_map_block'), 'block line_map_img', 'route') }}
+                    {{ macros.img('line_map_block', attribute(stopTimetable.blocks, 'line_map_block'), 'block line_map_img', 'route') }}
             </div>
 
             {% block timetable_downer_content %}{% endblock %}
@@ -69,7 +69,7 @@
             'stopPointLevel'    : stopPointLevel,
             'externalNetworkId' : externalNetworkId,
             'blockTypes'        : blockTypes,
-            'timetable'         : timetable,
+            'stopTimetable'     : stopTimetable,
             'stopPoint'         : stopPoint,
             'selector'          : '#layout-1-wrapper' }
     %}

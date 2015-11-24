@@ -1,4 +1,8 @@
-label: Divia 3 paves 21Juillet2015
-templateName: divia_3_paves.html.twig
-previewFileName: fond 3 pave.jpg
-orientation: 0
+layout:
+    label: Divia 3 paves 21Juillet2015
+    previewFileName: fond 3 pave.jpg
+    orientation: 0
+
+templates:
+    stop:
+        file: divia_3_paves.html.twig

@@ -2,11 +2,11 @@
 
 {% block additionnal_wrapper_class %}multicolor{% endblock %}
 
-{% block timetable_downer_content %}
+{% block stop_timetable_downer_content %}
     <div id="timetables-wrapper" class="clearfix">
         {% for i in 1..4 %}
             {% set id = 'timegrid_block_' ~ i %}
-            {% set block = attribute(timetable.blocks, id) %}
+            {% set block = attribute(stopTimetable.blocks, id) %}
             {% set addNotes = true %}
             {% if i == 3 %}
                 {% set nbLines = 10 %}

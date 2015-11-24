@@ -1,4 +1,8 @@
-label: Lianes 4 paves neutre 
-templateName: neutralLianes4Timegrids.html.twig
-previewFileName: neutral-Lianes-4-paves.png
-orientation: 0
+layout:
+    label: Lianes 4 paves neutre
+    previewFileName: neutral-Lianes-4-paves.png
+    orientation: 0
+
+templates:
+    stop:
+        file: neutralLianes4Timegrids.html.twig

@@ -1,4 +1,8 @@
-label: Lianes 4 paves
-templateName: lianes4Timegrids.html.twig
-previewFileName: Lianes-4-paves.png
-orientation: 0
+layout:
+    label: Lianes 4 paves
+    previewFileName: Lianes-4-paves.png
+    orientation: 0
+
+templates:
+    stop:
+        file: lianes4Timegrids.html.twig
