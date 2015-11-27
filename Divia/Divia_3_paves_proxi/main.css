@@ -268,17 +268,16 @@ img.divia-logo{
     text-align:center;
 }
 .additionnal-text-blocks{
-    font-size: 9pt;
+    font-size: 8pt;
     font-weight:bold;
-    padding:0 10px;
+    padding:6px 5px;
     height:40px;
     margin-bottom:20px;
     margin-top:10px;
 }
-.additionnal-text-blocks.green-block{
-    background-color: #b1ca34;
+.additionnal-text-blocks.black-block{
+    background-color: black;
     color:white;
-    padding-top: 12px;
     margin-top: 10px;
 }
 .additionnal-text-blocks.dark-block{
