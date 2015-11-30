@@ -308,6 +308,6 @@ img.flash-info {
     background-color: #F8EFCB;
 }
 
-#timegrid_block_2 .timegrid-body {
-    height: 160px !important;
+#timetable_downer_content #timetables-wrapper #timegrid_block_2 .timegrid-body {
+    height: 120px;
 }
