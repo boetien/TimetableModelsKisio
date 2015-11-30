@@ -91,7 +91,7 @@ img.divia-logo{
     margin-top:5px;
     line-height:15px;
     padding:2px;
-height: auto;
+    height: auto;
     position: relative;
     width:50%;
 }
@@ -202,7 +202,7 @@ height: auto;
 }
 #layout-1-wrapper.proxi-layout #timetables-wrapper .timegrid-container .timegrid-body{
     min-height:0;
-    height: 150px;
+    height: 80px;
 }
 .proxi-layout .centered-dropdown {
     margin-top: -45px;
@@ -293,4 +293,21 @@ img.flash-info {
 
 .external-additional-informations {
     top: 25%;
+}
+
+
+#timetables-wrapper #timegrid_block_2 {
+    margin-top: 38px;
+}
+
+#timegrid_block_2 .timegrid-header {
+    background-color: #e4C300;
+}
+
+#timegrid_block_2 .timegrid-body tr.even {
+    background-color: #F8EFCB;
+}
+
+#timetable_downer_content #timetables-wrapper #timegrid_block_2 .timegrid-body {
+    height: 120px;
 }

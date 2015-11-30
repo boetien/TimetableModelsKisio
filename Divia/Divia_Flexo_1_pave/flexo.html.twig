@@ -4,30 +4,28 @@
 
 {% block timetable_downer_content %}
     <div id="timetable_downer_content" class="clearfix">
-        {%
-            include templatePath ~ "leftOrangeBlock.html.twig"
-            with { 'brand' : 'flexo' } only
-        %}
+        {% include templatePath ~ "leftOrangeBlock.html.twig"
+        with { 'brand' : 'flexo' } only %}
         <div id="timetables-wrapper">
             {% set addNotes = false %}
             {% set id = 'timegrid_block_1' %}
             {% set block = attribute(timetable.blocks, id) %}
-            {% set nbLines = 4 %}
-            {% include "CanalTPMttBundle:Layouts:timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : nbLines, additionnalClass: 'purple'} %}
+            {% include "CanalTPMttBundle:Layouts:timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : 4, additionnalClass: 'purple'} %}
             {% set calendar = attribute(calendars, block.content) %}
-            <div class="pad30t">
-            {% if calendar %}
-            {%
-                include "CanalTPMttBundle:Layouts:notes.html.twig"
-                with { 'notes' : calendar.notes, 'computedNotes' : notes, 'calendar' : calendar } only
-            %}
-            {% endif %}
+            <div class="pad10t">
+                {% if calendar %}
+                    {% include "CanalTPMttBundle:Layouts:notes.html.twig"
+                    with { 'notes' : calendar.notes, 'computedNotes' : notes, 'calendar' : calendar } only %}
+                {% endif %}
             </div>
             <div class="information-text-blocks">
                 <div id="" class="centered-text-block text-block-wrapper">
                     <div class="content">En période "Anis", les horaires de cette ligne ne changent pas.</div>
                 </div>
-            </div> 
+            </div>
+            {% set id = 'timegrid_block_2' %}
+            {% set block = attribute(timetable.blocks, id) %}
+            {% include "CanalTPMttBundle:Layouts:timegrid.html.twig" with {'addNotes': addNotes, 'nbLines' : 6, additionnalClass: 'purple'} %}
         </div>
     </div>
 {% endblock %}
