@@ -38,7 +38,7 @@
             <div id="map-wrapper" class="clearfix">
                 <div id="large-left-blocks">
                     {{ macros.img('line_map_block', attribute(timetable.blocks, 'line_map_block'), 'block line_map_img', 'route') }}
-                    {{ macros.flash_info('flash_info_block', imgPath ~ 'flash_info.png', 'Repérez la période à consulter, grâce à la couleur du jour de votre voyage indiquée sur le "Calendrier Voyageurs"') }}
+                    {{ macros.flash_info('flash_info_block', imgPath ~ 'flash_info.png') }}
                 </div>
                 <div id="small-right-blocks">
                     {{ macros.text('text_block_1', attribute(timetable.blocks, 'text_block_1'), 'route', 'small-block block') }}
