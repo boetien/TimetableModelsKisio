@@ -1,0 +1,8 @@
+layout:
+    label: Divia 3 paves citron anis 01Décembre2015
+    previewFileName: divia_3_paves_citron_anis.jpg
+    orientation: 0
+
+templates:
+    stop:
+        file: divia_3_paves_citron_anis.html.twig
