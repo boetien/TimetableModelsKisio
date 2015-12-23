@@ -24,7 +24,7 @@
 
 
             <div id="header" class="clearfix">
-                {{ macros.img('header_route_sign', attribute(stopTimetable.blocks, 'header_route_sign'), 'header_route_sign_img', 'route') }}
+                {{ macros.img('header_route_sign', stopTimetable.BlockByDomId('header_route_sign'), 'header_route_sign_img') }}
                 <div id="direction-title-wrapper" data-block-level="route" data-auto-filled="1">
                     <div class="title-header">{{ 'global.direction'|trans }} :</div>
                     <span class="clearfix"></span>
@@ -52,7 +52,7 @@
             </div>
 
             <div id="map-wrapper" class="clearfix">
-                    {{ macros.img('line_map_block', attribute(stopTimetable.blocks, 'line_map_block'), 'block line_map_img', 'route') }}
+                    {{ macros.img('line_map_block', stopTimetable.BlockByDomId('line_map_block'), 'block line_map_img') }}
             </div>
 
             {% block stop_timetable_downer_content %}{% endblock %}

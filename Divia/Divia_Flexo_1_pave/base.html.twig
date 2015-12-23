@@ -20,7 +20,7 @@
     <div id="layout-1-wrapper" class="{% block additionnal_wrapper_class %}{% endblock %}">
         <div class="layout-container">
             <div id="header" class="clearfix">
-                {{ macros.img('header_route_sign', attribute(stopTimetable.blocks, 'header_route_sign'), 'header_route_sign_img', 'route') }}
+                {{ macros.img('header_route_sign', stopTimetable.BlockByDomId('header_route_sign'), 'header_route_sign_img') }}
                 <div id="direction-title-wrapper" data-block-level="route" data-auto-filled="1">
                     {% if stopTimetable.title is defined %}
                         {{ 'global.direction'|trans }} {{ stopTimetable.title }}
@@ -37,11 +37,11 @@
             </div>
             <div id="map-wrapper" class="clearfix">
                 <div id="large-left-blocks">
-                    {{ macros.img('line_map_block', attribute(stopTimetable.blocks, 'line_map_block'), 'line_map_img', 'route') }}
+                    {{ macros.img('line_map_block', stopTimetable.BlockByDomId('line_map_block'), 'line_map_img') }}
                     {{ macros.flash_info('flash_info_block', imgPath ~ 'flash_info.png') }}
                 </div>
                 <div id="small-right-blocks">
-                    {{ macros.text('text_block_1', attribute(stopTimetable.blocks, 'text_block_1'), 'route', 'small-block block') }}
+                    {{ macros.text('text_block_1', stopTimetable.BlockByDomId('text_block_1'), 'small-block block') }}
                     {{ macros.description('small-block') }}
                     {{ macros.stop_point_pois('text_block_3', stopPoint, 'small-block', 'Points de vente - Relais Divia') }}
                     {{ macros.stop_point_code('text_block_4', stopPoint, 'small-block', 'Code TOTEM de cet arrêt') }}
